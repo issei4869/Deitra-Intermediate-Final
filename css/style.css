@@ -1,0 +1,26 @@
+@charset "UTF-8";
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+.test {
+  color: #FFAA3B;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
