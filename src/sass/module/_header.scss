@@ -1,8 +1,52 @@
 @use 'global' as *;
 
 .header {
-  color: $yellow;
-  font-size: rem(16);
-  font-family: $english-family;
-  font-weight: $regular;
+  height: rem(68);
+  background-color: $white;
+  //background-color: transparent;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  @include mq('md') {
+    background-color: #FFFFFF1A;
+    height: rem(83);
+  }
 }
+
+.header__inner {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 rem(15);
+  @include mq('md') {
+    justify-content: center;
+  }
+}
+
+.header__logo {
+  font-size: rem(23);
+  font-family: $english-family;
+  font-weight: $bold;
+  color: $black;
+  line-height: 1;
+  @include mq('md') {
+    display: none;
+  }
+}
+
+.header__drawer {
+  @include mq('md') {
+    display: none;
+  }
+}
+
+.header__pc-nav {
+  height: inherit;
+  display: none;
+  @include mq('md') {
+    display: block;
+  }
+}
+
+

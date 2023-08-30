@@ -1,0 +1,13 @@
+@use 'global' as *;
+
+.section-header {
+  text-align: center;
+  font-size: rem(30);
+  font-weight: $semibold;
+  color: $black;
+  font-family: $english-family;
+  line-height: 1;
+  @include mq('md') {
+    font-size: rem(36);
+  }
+}

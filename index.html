@@ -10,11 +10,93 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- Swiper -->
+  <!-- <link
+	  rel="stylesheet"
+	  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+	/> -->
+  <!-- css -->
   <link rel="stylesheet" href="./css/styles.css">
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <!-- jsのCDN -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script defer src="./js/script.js"></script>
+
 </head>
 <body>
-  <div class="header">
-    Chrome
-  </div>
+  <!-- ヘッダー -->
+  <header class="space-header header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        Sample Corp.
+      </h1>
+      <div class="header__drawer hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <nav class="header__pc-nav pc-nav">
+        <ul class="pc-nav__items">
+          <li class="pc-nav__item">
+            <a href="#">News</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="#">Service</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="#">Results</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="#">Price</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="#">Comments</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="#">FAQs</a>
+          </li>
+          <li class="pc-nav__item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="header__sp-nav sp-nav js-sp-nav">
+        <ul class="sp-nav__items">
+          <li class="sp-nav__item">
+            <a href="">News</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="">Service</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="">Results</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="">Price</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="">Comments</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="">FAQs</a>
+          </li>
+          <li class="sp-nav__item">
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="sp-nav__background js-background"></div>
+
+    </div>
+  </header>
+
+  <!-- 共通パーツ -->
+  <!-- <div class="section-header">
+    News
+  </div> -->
+
+
 </body>
 </html>
