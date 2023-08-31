@@ -1,5 +1,79 @@
 @use 'global' as *;
 
 .footer {
-  
+  padding-top: rem(60);
+  padding-bottom: rem(57);
+  background-color: $black;
 }
+
+.footer__inner {
+  // padding: 0 rem(77);
+  // margin: auto;
+}
+
+.footer__wrapper {
+  @include mq('md') {
+    display: flex;
+  }
+}
+
+.footer__contents {
+  text-align: center;
+}
+
+.footer__icon {
+  display: flex;
+}
+
+.footer__x {
+  background-color: $white;
+  opacity: 0.6;
+}
+
+.footer__items {
+  color: $white;
+  margin-top: rem(42);
+}
+
+.footer__item {
+  display: block;
+}
+
+.footer__item a {
+  font-size: rem(14);
+  font-weight: $medium;
+  letter-spacing: 0.0035em;
+}
+
+.footer__item:not(:first-child) {
+  padding-top: rem(26);
+}
+
+.footer__title {
+  text-align: center;
+  margin-top: rem(40);
+}
+
+.footer__logo {
+  color: #E3E3E3;
+  font-size: rem(32);
+  font-family: $english-family;
+  font-weight: $bold;
+  line-height: 1;
+}
+
+.footer__copyright {
+  margin-top: rem(12);
+  color: $white;
+  opacity: 0.6;
+  font-family: $english-family;
+  font-weight: $regular;
+  line-height: 1;
+  letter-spacing: 0.003em;
+}
+
+.footer__copyright small {
+  font-size: rem(12);
+}
+
+
