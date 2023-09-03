@@ -1,0 +1,8 @@
+@use 'global' as *;
+
+.header {
+  color: $red;
+  font-size: rem(16);
+  font-family: $english-family;
+  font-weight: $regular;
+}

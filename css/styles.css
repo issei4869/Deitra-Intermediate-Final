@@ -193,15 +193,12 @@ select::-ms-expand {
   text-align: center;
 }
 
-.footer__icon {
+.footer__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.footer__x {
-  background-color: #FFFFFF;
-  opacity: 0.6;
+  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .footer__items {

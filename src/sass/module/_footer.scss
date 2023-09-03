@@ -21,13 +21,13 @@
   text-align: center;
 }
 
-.footer__icon {
+.footer__icons {
   display: flex;
+  margin-top: rem(20);
 }
 
-.footer__x {
-  background-color: $white;
-  opacity: 0.6;
+.footer__icon {
+  
 }
 
 .footer__items {
