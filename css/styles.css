@@ -173,6 +173,18 @@ select::-ms-expand {
   display: none;
 }
 
+.btn {
+  padding: 16px 32px;
+  padding: 1rem 2rem;
+  border: 1px solid #FFFFFF;
+  display: inline-block;
+  line-height: 1;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
 .footer {
   padding-top: 60px;
   padding-top: 3.75rem;
@@ -393,6 +405,74 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .header__pc-nav {
     display: block;
+  }
+}
+
+.mv {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/common/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mv__header {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 16px;
+  left: 1rem;
+  color: #3E3E3E;
+}
+@media screen and (min-width: 768px) {
+  .mv__header {
+    width: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+.mv__title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.6666666667;
+}
+@media screen and (min-width: 768px) {
+  .mv__title {
+    font-size: 2rem;
+    line-height: 1.5;
+    letter-spacing: 0.00002em;
+  }
+}
+
+.mv__subtitle {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.4285714286;
+  margin-top: 32px;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .mv__subtitle {
+    font-size: 1.125rem;
+    line-height: 1.5555555556;
+    letter-spacing: 0.00045em;
+    margin-top: 2.5rem;
+  }
+}
+
+.mv__btn {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+}
+@media screen and (min-width: 768px) {
+  .mv__btn {
+    font-size: 2.5rem;
   }
 }
 

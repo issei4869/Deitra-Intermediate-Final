@@ -1,0 +1,59 @@
+@use 'global' as *;
+
+.mv {
+  position: relative;
+  height: 100vh;
+  background-image: url(../images/common/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mv__inner {
+  //padding: 0 rem(30) 0 rem(50);
+}
+
+.mv__header {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(16);
+  color: $black;
+  @include mq('md') {
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+}
+
+.mv__title {
+  font-size: rem(24);
+  font-weight: $bold;
+  line-height: calc(40 / 24);
+  @include mq('md') {
+    font-size: rem(32);
+    line-height: calc(48 / 32);
+    letter-spacing: 0.00002em;
+  }
+}
+
+.mv__subtitle {
+  font-size: rem(14);
+  font-weight: $bold;
+  line-height: calc(20 / 14);
+  margin-top: rem(32);
+  @include mq('md') {
+    font-size: rem(18);
+    line-height: calc(28 / 18);
+    letter-spacing: 0.00045em;
+    margin-top: rem(40);
+  }
+}
+
+.mv__btn {
+  margin-top: rem(30);
+  @include mq('md') {
+    font-size: rem(40);
+  }
+}
+
