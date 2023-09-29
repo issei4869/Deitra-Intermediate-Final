@@ -3,8 +3,9 @@
 .mv {
   position: relative;
   height: 100vh;
-  background-image: url(../images/common/hero.jpg);
+  background-image: url(../images/common/mv.png);
   background-repeat: no-repeat;
+  background-position: 20% center;
   background-size: cover;
 }
 
@@ -52,6 +53,7 @@
 
 .mv__btn {
   margin-top: rem(30);
+  text-align: center;
   @include mq('md') {
     font-size: rem(40);
   }

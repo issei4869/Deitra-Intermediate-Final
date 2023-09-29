@@ -1,0 +1,40 @@
+@use 'global' as *;
+
+.news__inner {
+  @include mq('md') {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.news__items {
+  margin-top: rem(32);
+  @include mq('md') {
+    margin-top: 0;
+    margin-left: rem(50);
+  }
+}
+
+.news__item + .news__item {
+  margin-top: rem(40);
+  @include mq('md') {
+    padding-top: rem(15);
+  }
+}
+
+    //この書き方でもOK
+// .news__item:nth-child(n + 2) {
+//   margin-top: rem(40);
+// }
+
+.news-content {
+  @include mq('md') {
+    display: flex;
+  }
+}
+
+.news-content__link {
+  @include mq('md') {
+    margin-left: rem(20);
+  }
+}
