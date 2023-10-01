@@ -1,4 +1,9 @@
 @use 'global' as *;
+.news {
+  z-index: 100;
+  position: relative;
+  padding: rem(40) 0;
+}
 
 .news__inner {
   @include mq('md') {
@@ -9,10 +14,22 @@
 
 .news__items {
   margin-top: rem(32);
+  position: relative;
   @include mq('md') {
     margin-top: 0;
     margin-left: rem(50);
   }
+}
+
+.news__items::after {
+  content: "";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 11px;
+  height: 21px;
+  background: transparent url(../images/common/news-arrow.png) no-repeat center center / contain;
 }
 
 .news__item + .news__item {
