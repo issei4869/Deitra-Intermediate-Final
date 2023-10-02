@@ -24,7 +24,7 @@
 .news__items::after {
   content: "";
   position: absolute;
-  right: 16px;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
   width: 11px;
@@ -45,6 +45,8 @@
 // }
 
 .news-content {
+  padding-left: rem(16);
+  padding-right: rem(55);
   @include mq('md') {
     display: flex;
   }
@@ -54,4 +56,10 @@
   @include mq('md') {
     margin-left: rem(20);
   }
+}
+
+.news-content__text {
+  font-size: rem(14);
+  font-weight: $medium;
+  line-height: calc(20 / 14);
 }
