@@ -10,7 +10,8 @@
   z-index: 100;
   margin-top: rem(-60);
   padding: rem(40) 0;
-  background-color: $yellow;
+  background-color: $white;
+  box-shadow: 0 5px 12px rgba(#3E3E3E33, 1);
   position: relative;
   // @include mq('md') {
   //   display: flex;

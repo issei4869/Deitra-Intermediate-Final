@@ -1,0 +1,17 @@
+@use 'global' as *;
+
+.service-content {
+
+}
+
+.service-content__image {
+  aspect-ratio: 50 / 32; // 横 / 高さ
+  width: 50px;
+  height: 32px;
+}
+
+.service-content__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

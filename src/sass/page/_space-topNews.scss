@@ -2,6 +2,7 @@
 
 .space-topNews {
   margin-top: rem(-20);
+  background-color: $gray;
   @include mq('md') {
     margin-top: rem(60);
   }
