@@ -1,0 +1,19 @@
+@use 'global' as *;
+
+.bw-btn {
+  padding: rem(16) rem(100);
+  //background-color:  transparent; 
+  display: inline-block;
+  line-height: 1;
+  font-size: rem(18);
+  font-weight: $semibold;
+  font-family: $english-family;
+  letter-spacing: 3.6px;
+  border: 1px solid $white;
+  color: $white;
+}
+
+.bw-btn--black {
+  border: 1px solid $black;
+  color: $black;
+}
