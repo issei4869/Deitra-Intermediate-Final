@@ -1,1 +1,46 @@
 @use 'global' as *;
+
+.service-content {
+  text-align: center;
+}
+
+.service-content__image {
+  //aspect-ratio: 50 / 32; // 横 / 高さ
+  width: rem(64);
+  height: rem(64);
+  display: inline-block;
+  padding: rem(16) rem(7);
+}
+
+.service-content__image--design {
+  width: rem(64);
+  height: rem(64);
+  display: inline-block;
+  padding: rem(10) rem(7);
+}
+
+.service-content__image img {
+  width: 100%;
+  height: 100%;
+  //object-fit: cover;
+}
+
+.service-content__title {
+  //margin-top: rem(8);
+  font-size: rem(20);
+  font-weight: $semibold;
+  font-family: $english-family;
+  letter-spacing: 4px;
+  text-align: center;
+  line-height: calc(24 / 20);
+  color: $black;
+}
+
+.service-content__text {
+  margin-top: rem(20); 
+  font-size: rem(14);
+  font-weight: $medium;
+  line-height: calc(24 / 14);
+  color: $black;
+  text-align: left;
+}
