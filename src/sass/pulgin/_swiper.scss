@@ -9,7 +9,8 @@
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   //margin: rem(10);
-  
+  opacity: 1;
+  background-color: $white;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:nth-child(n + 2) {
@@ -25,6 +26,19 @@
 }
 
 .swiper-pagination-bullet {
-  width: rem(15);
-  height: rem(15);
+  width: rem(12);
+  height: rem(12);
+  position: relative;
+}
+
+.swiper-pagination-bullet-active::before {
+  content: "";
+  position: absolute;
+  border: 1px solid $white;
+  border-radius: 10px;
+  width: rem(20);
+  height: rem(20);
+  top: rem(-4);
+  left: rem(-4);
+  right: 0;
 }

@@ -24,6 +24,9 @@
 .footer__icons {
   display: flex;
   margin-top: rem(20);
+  justify-content: center;
+  text-align: center;
+  gap: rem(50);
 }
 
 .footer__icon {
