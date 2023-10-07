@@ -5,8 +5,8 @@
   padding: rem(40) 0;
 }
 
-.results__inner {
-
+.results__inner.inner {
+  padding-right: 0;
 }
 
 .results__content {
@@ -18,11 +18,11 @@
   position: relative;
 }
 
-.results__item {
-  
+.swiper-slide.results__item {
+  margin-right: rem(20);
 }
 
 .results__btn {
   text-align: center;
-  margin-top: rem(28);
+  margin-top: rem(68);
 }

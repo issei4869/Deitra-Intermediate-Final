@@ -55,15 +55,29 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   //カルーセル（スライダー）
-  var swiper = new Swiper(".js-results-swiper", {
-    slidesPerView: 4,
-    centeredSlides: true,
-    spaceBetween: 30,
-    grabCursor: true,
+  // var swiper = new Swiper(".js-results-swiper", {
+  //   slidesPerView: 4,
+  //   centeredSlides: true,
+  //   spaceBetween: 30,
+  //   grabCursor: true,
+  //   pagination: {
+  //     el: ".js-results-pagination",
+  //     clickable: true,
+  //   },
+  // });
+  var swiper = new Swiper('.js-results-swiper', {
+    slidesPerView: 1.3,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     pagination: {
       el: ".js-results-pagination",
       clickable: true,
     },
+    clickable: true, //追加
+	  loop: true, //追加
   });
 
 });
