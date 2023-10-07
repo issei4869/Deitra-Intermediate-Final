@@ -1,0 +1,28 @@
+@use 'global' as *; 
+
+.results {
+  background-color: $black;
+  padding: rem(40) 0;
+}
+
+.results__inner {
+
+}
+
+.results__content {
+  
+}
+
+.results__items {
+  margin-top: rem(40);
+  position: relative;
+}
+
+.results__item {
+  
+}
+
+.results__btn {
+  text-align: center;
+  margin-top: rem(28);
+}

@@ -203,6 +203,43 @@ select::-ms-expand {
   color: #3E3E3E;
 }
 
+.card__img {
+  aspect-ratio: 274/171;
+}
+
+.card__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card__body {
+  padding: 12px;
+  padding: 0.75rem;
+  background-color: #FFFFFF;
+}
+
+.card__title {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.1428571429;
+  letter-spacing: 0.00001em;
+  color: #3E3E3E;
+}
+
+.card__text {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.3333333333;
+  letter-spacing: 0.00001em;
+  color: #3E3E3E;
+  margin-top: 12px;
+  margin-top: 0.75rem;
+}
+
 .footer {
   padding-top: 60px;
   padding-top: 3.75rem;
@@ -879,5 +916,22 @@ select::-ms-expand {
 .space {
   margin-top: 20px;
   margin-top: 1.25rem;
+}
+
+.results {
+  background-color: #3E3E3E;
+  padding: 40px 0;
+  padding: 2.5rem 0;
+}
+
+.results__items {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+
+.results__btn {
+  text-align: center;
+  margin-top: 28px;
+  margin-top: 1.75rem;
 }
 /*# sourceMappingURL=styles.css.map */

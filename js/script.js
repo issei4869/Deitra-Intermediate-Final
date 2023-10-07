@@ -44,7 +44,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
-
   $(document).on('click', 'a[href*="#"]', function () {
     let time = 400;
     let header = $('header').innerHeight();
@@ -55,15 +54,16 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-  var swiper = new Swiper(".js-works-swiper", {
+  //カルーセル（スライダー）
+  var swiper = new Swiper(".js-results-swiper", {
+    slidesPerView: 4,
+    centeredSlides: true,
+    spaceBetween: 30,
+    grabCursor: true,
     pagination: {
-      el: ".js-works-pagination",
+      el: ".js-results-pagination",
+      clickable: true,
     },
-    clickable: true,
-    loop: true,
-    // autoplay: {
-    //   delay: 3000, //数値/1000秒
-    // },
   });
 
 });
