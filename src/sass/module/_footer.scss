@@ -29,8 +29,22 @@
   gap: rem(50);
 }
 
-.footer__icon {
-  
+.footer__icon svg {
+  //font-style: rem(30);
+  width: rem(30);
+  height: rem(30);
+}
+
+.footer__icon svg path {
+  fill: $gray;
+  opacity: 0.6
+}
+
+.footer__icon img {
+  width: rem(36);
+  height: rem(36);
+  color: $gray;
+  opacity: 0.6
 }
 
 .footer__items {

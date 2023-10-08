@@ -274,6 +274,27 @@ select::-ms-expand {
   gap: 3.125rem;
 }
 
+.footer__icon svg {
+  width: 30px;
+  width: 1.875rem;
+  height: 30px;
+  height: 1.875rem;
+}
+
+.footer__icon svg path {
+  fill: #F3F3F3;
+  opacity: 0.6;
+}
+
+.footer__icon img {
+  width: 36px;
+  width: 2.25rem;
+  height: 36px;
+  height: 2.25rem;
+  color: #F3F3F3;
+  opacity: 0.6;
+}
+
 .footer__items {
   color: #FFFFFF;
   margin-top: 42px;
