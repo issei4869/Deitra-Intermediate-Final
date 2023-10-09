@@ -1,0 +1,44 @@
+@use 'global' as *;
+.comments {
+  //z-index: 98;
+  position: relative;
+  padding: 0 rem(16) rem(60) rem(16);
+  //background-color: $gray;
+}
+
+.comments__inner {
+  z-index: 100;
+  margin-top: rem(-60);
+  padding: rem(40) 0;
+  background-color: $white;
+  box-shadow: 0 0px 10px rgba(#00000029, 1);
+  position: relative;
+  // @include mq('md') {
+  //   display: flex;
+  //   justify-content: center;
+  // }
+}
+
+.comments__inner.inner {
+  padding-left: rem(20);
+  padding-right: rem(20);
+}
+
+.comments__items {
+  margin-top: rem(40);
+  @include mq('md') {
+    margin-top: 0;
+    margin-left: rem(50);
+  }
+}
+
+.comments__item {
+  
+}
+
+.comments__item + .comments__item {
+  margin-top: rem(40);
+  @include mq('md') {
+    padding-top: rem(15);
+  }
+}

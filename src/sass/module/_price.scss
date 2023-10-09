@@ -4,6 +4,8 @@
   background-color: $gray;
   padding-top: rem(40);
   padding-bottom: rem(120);
+  position: relative;
+  z-index: 99;
 }
 
 .price__inner {

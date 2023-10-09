@@ -1,6 +1,5 @@
 @use 'global' as *;
 .news {
-  //z-index: 98;
   position: relative;
   padding: 0 rem(16) rem(60) rem(16);
   //background-color: $gray;
@@ -8,7 +7,7 @@
 
 .news__inner {
   z-index: 100;
-  margin-top: rem(-60);
+  //margin-top: rem(-60);
   padding: rem(40) 0;
   background-color: $white;
   box-shadow: 0 5px 12px rgba(#3E3E3E33, 1);
@@ -20,10 +19,10 @@
 }
 
 .news::after {
-  content: "";
-  position: absolute;
-  z-index: 98;
-  background-color: $gray;
+  // content: "";
+  // position: absolute;
+  // z-index: 98;
+  // background-color: $gray;
 }
 
 .news__items {
