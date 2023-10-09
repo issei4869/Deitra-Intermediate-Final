@@ -4,14 +4,14 @@
   position: relative;
   padding: 0 rem(16) rem(60) rem(16);
   //background-color: $gray;
+  @include mq('md') {
+    padding: 0;
+  }
 }
 
 .comments__inner {
   z-index: 100;
   margin-top: rem(-60);
-  padding: rem(40) 0;
-  background-color: $white;
-  box-shadow: 0 0px 10px rgba(#00000029, 1);
   position: relative;
   // @include mq('md') {
   //   display: flex;
@@ -22,13 +22,32 @@
 .comments__inner.inner {
   padding-left: rem(20);
   padding-right: rem(20);
+  @include mq('md') {
+    padding-left: rem(40);
+    padding-right: rem(40);
+  }
+}
+
+.comments__contents {
+  display: block;
+  @include mq('md') {
+    display: flex;
+  }
+}
+
+.comments__content {
+  padding: rem(40) 0;
+  background-color: $white;
+  box-shadow: 0 0px 10px rgba(#00000029, 1);
+  @include mq('md') {
+    padding: rem(120) rem(60);
+  }
 }
 
 .comments__items {
   margin-top: rem(40);
   @include mq('md') {
-    margin-top: 0;
-    margin-left: rem(50);
+    margin-top: rem(60);
   }
 }
 
@@ -40,5 +59,24 @@
   margin-top: rem(40);
   @include mq('md') {
     padding-top: rem(15);
+  }
+}
+
+.comments__image {
+  display: none;
+  @include mq('md') {
+    display: block;
+    //padding: rem(80) 0;
+    aspect-ratio: 534 / 444; // 横 / 高さ
+    width: rem(534);
+    height: rem(444);
+  }
+}
+
+.comments__image img {
+  @include mq('md') {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }

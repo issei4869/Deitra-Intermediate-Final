@@ -9,6 +9,10 @@
   aspect-ratio: 60 / 60; // 横 / 高さ
   width: rem(60);
   height: rem(60);
+  @include mq('md') {
+    width: rem(100);
+    height: rem(100);
+  }
 } 
   
 .comments-content__image img {
@@ -22,5 +26,10 @@
   font-weight: $medium;
   line-height: calc(20 / 14);
   color: $black;
-  padding-left: rem(20);
+  margin-left: rem(20);
+  @include mq('md') {
+    font-size: rem(16);
+    margin-left: rem(32);
+    line-height: calc(24 / 16);
+  }
 }
