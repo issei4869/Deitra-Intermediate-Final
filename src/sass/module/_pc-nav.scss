@@ -16,7 +16,18 @@
   height: inherit;
 }
 
+.pc-nav__item {
+  margin-left: rem(40);
+}
+
+.pc-nav__item:first-child {
+  margin-left: 0;
+}
+
 .pc-nav__item a {
+  //下線なし
+  text-decoration: none;
+  position: relative;
   display: flex;
   align-items: center;
   color: $black;
@@ -25,14 +36,25 @@
   letter-spacing: -0.004em;
   font-weight: $medium;
   line-height: 1;
-  padding-left: rem(40);
   //padding-right: rem(12);
-}
-
-.pc-nav__item:first-child a {
-  padding-left: 0;
 }
 
 // .pc-nav__item:last-child a {
 //   padding-right: 0;
 // }
+
+.pc-nav__item a::after{
+  content: "";
+  position: absolute;
+  bottom: rem(23); //黒下線とheader名の間の余白
+  left: rem(-4);
+  width: calc(100% + rem(10));
+  height: rem(1);
+  background: transparent; //透明背景の棒
+  transition: all 0.3s ease 0s;
+}
+
+//aタグが選択（is-active）されているとき、黒下線
+.pc-nav__item a:hover::after {
+  background: $black;
+}

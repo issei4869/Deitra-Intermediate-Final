@@ -11,9 +11,25 @@
   letter-spacing: 3.6px;
   border: 1px solid $white;
   color: $white;
+  transition: all 0.3s ease 0s;
 }
+
+.bw-btn:hover {
+  color: $black;
+  background-color: $white;
+  border: 1px solid $black;
+  transition: all 0.3s ease 0s;
+}
+
 
 .bw-btn--black {
   border: 1px solid $black;
   color: $black;
+}
+
+.bw-btn--black:hover {
+  color: $white;
+  background-color: $black;
+  border: 1px solid $white;
+  transition: all 0.3s ease 0s;
 }

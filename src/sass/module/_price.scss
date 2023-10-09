@@ -1,0 +1,32 @@
+@use 'global' as *;
+
+.price {
+  background-color: $gray;
+  padding-top: rem(40);
+  padding-bottom: rem(120);
+}
+
+.price__inner {
+
+}
+
+.price__items {
+  margin-top: rem(40);
+}
+
+.price__item {
+  
+}
+
+.price__item:not(:first-child) {
+  border-top: 0;
+}
+
+.price__note {
+  font-size: rem(12);
+  font-weight: $medium;
+  line-height: 1;
+  color: $black;
+  margin-top: rem(8);
+}
+

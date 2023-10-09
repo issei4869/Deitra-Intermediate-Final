@@ -41,8 +41,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-
-
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
     let time = 400;
@@ -53,6 +51,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
+
+  //ドロワーアイコン選択したところにのみ下線
+  // $('.pc-nav__item a').on('click',function() {
+  //   jQuery('.pc-nav__item a').removeClass( 'is-active' );
+  //   jQuery(this).addClass( 'is-active' );
+  //   return false;
+  // });
 
   //カルーセル（スライダー）
   // var swiper = new Swiper(".js-results-swiper", {
@@ -80,4 +85,39 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 	  loop: true, //追加
   });
 
+  //Q & Aのアコーディオン
+  $('.qa-box__q').on('click',function() {
+    jQuery(this).next().slideToggle();//qa-box__qの次の兄弟要素（qa-box__a）が起動
+    jQuery(this).children('.qa-box__icon').toggleClass( 'is-open' );//slideToggleが起動した際、子要素にis-openが付与される
+  });
+
+  // モーダルを閉じる
+  $('.js-close-button').click(function(e) {
+    e.preventDefault();
+    //data-以下が「target」になってる属性の値（.target-modal）を取得
+    let target = jQuery(this).data('target');
+  
+    //☓か閉じるボタンが押されたらtarget-modalのクラスは隠される
+    jQuery(target).hide();
+  
+    return false;
+  });
+
+  // モーダルを開く
+  $('.js-open-button').click(function(e) {
+    e.preventDefault();
+    //data-以下が「target」になってる属性の値（.target-modal）を取得
+    //console.log(jQuery(this).data('target'));
+    let target = jQuery(this).data('target');
+
+    //プライバシーポリシーのリンクが押されたらtarget-modalのクラスが表示される
+    jQuery(target).show();
+
+    return false;
+  });
+
 });
+
+
+
+

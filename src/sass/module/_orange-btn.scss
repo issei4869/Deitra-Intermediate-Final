@@ -2,11 +2,18 @@
 
 .orange-btn {
   padding: rem(16) rem(32);
-  background-color: #FFAA3B;
+  background-color: $yellow;
   display: inline-block;
   line-height: 1;
   font-size: rem(16);
   font-weight: $bold;
   border-radius: 10px;
   color: $white;
+  transition: all 0.3s ease 0s;
+  box-shadow: 0 3px 5px rgba(#3E3E3E33, 1);
+}
+
+.orange-btn:hover {
+  background-color: #F18900;
+  transition: all 0.3s ease 0s;
 }
