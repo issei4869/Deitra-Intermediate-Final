@@ -1,0 +1,62 @@
+@use 'global' as *;
+
+.access {
+  background: linear-gradient(
+    90deg, //縦に半分こ
+    $black 0%,
+    $black 76.6%,
+    $gray 76.6%,
+    $gray 100%
+  );
+}
+
+.access__inner {
+  display: flex;
+  @include mq('sp') {
+    //display: flex;
+    flex-direction: column;
+  }
+}
+
+.access__content {
+  @include mq('sp') {
+    display: contents; 
+  }
+}
+
+.access__address {
+  font-size: rem(16);
+  font-weight: $medium;
+  line-height: calc(24 / 16);
+  color: $white;
+  margin-top: rem(60);
+  @include mq('sp') {
+    order: 2;
+  }
+}
+
+.access__section-header {
+  @include mq('sp') {
+    order: 1;
+  }
+}
+
+.access__btn {
+  margin-top: rem(32);
+  @include mq('sp') {
+    order: 4;
+  }
+}
+
+.access__googlemap {
+  aspect-ratio: 726 / 520; // 横 / 高さ
+  margin-left: rem(100);
+  @include mq('sp') {
+    order: 3;
+  }
+}
+
+.access__googlemap iframe {
+  width: 100%;
+  height: 100%;
+}

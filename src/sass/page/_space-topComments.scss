@@ -1,9 +1,18 @@
 @use 'global' as *;
 
 .space-topComments {
-  margin-top: rem(-40);
+  margin-top: rem(-56);
   background-color: $black;
+  
   @include mq('md') {
-    margin-top: rem(60);
+    margin-top: rem(-135);
+    background: linear-gradient(
+      90deg, //縦に半分こ
+      $black 0%,
+      $black 76.6%,
+      $gray 76.6%,
+      $gray 100%
+    );
   }
+  
 }
