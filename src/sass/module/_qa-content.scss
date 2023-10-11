@@ -11,7 +11,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-bottom: rem(16);
 }
 
 .qa-content__question::after {
@@ -78,4 +77,5 @@
   font-weight: $medium;
   color: $black;
   line-height: calc(20 / 14);
+  margin-top: rem(16);
 }

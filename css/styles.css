@@ -1143,8 +1143,6 @@ select::-ms-expand {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
 }
 
 .qa-content__question::after {
@@ -1229,6 +1227,8 @@ select::-ms-expand {
   font-weight: 500;
   color: #3E3E3E;
   line-height: 1.4285714286;
+  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 .qa {
