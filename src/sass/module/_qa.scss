@@ -1,0 +1,22 @@
+@use 'global' as *;
+
+.qa {
+  background-image: url(../images/common/qa-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: rem(40);
+  padding-bottom: rem(60);
+}
+
+.qa__inner {
+  
+}
+
+.qa__items {
+  margin-top: rem(40);
+}
+
+.qa__item:not(:first-child)  {
+  margin-top: rem(24);
+}

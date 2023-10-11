@@ -219,9 +219,6 @@ select::-ms-expand {
 }
 @media screen and (max-width: 768px) {
   .access__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1126,6 +1123,112 @@ select::-ms-expand {
   color: #3E3E3E;
   margin-top: 8px;
   margin-top: 0.5rem;
+}
+
+.qa-content {
+  padding: 16px;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.qa-content__question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.qa-content__question::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 17px;
+  height: 17px;
+  background: transparent url(../images/common/minus.png) no-repeat center center/contain;
+}
+
+.qa-content__title {
+  position: relative;
+  margin-left: 16px;
+  margin-left: 1rem;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4285714286;
+  letter-spacing: 0.0004em;
+  padding-right: 37px;
+  padding-right: 2.3125rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.qa-content__icon {
+  font-size: 16px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #3B69FF;
+  border-radius: 50%;
+  width: 24px;
+  width: 1.5rem;
+  height: 24px;
+  height: 1.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.qa-content__answer {
+  margin-top: 16px;
+  margin-top: 1rem;
+  padding: 12px 16px 12px 12px;
+  padding: 0.75rem 1rem 0.75rem 0.75rem;
+  background-color: rgba(59, 105, 255, .2);
+  border-radius: 4px;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #3E3E3E;
+  line-height: 1.4285714286;
+}
+
+.qa {
+  background-image: url(../images/common/qa-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 40px;
+  padding-top: 2.5rem;
+  padding-bottom: 60px;
+  padding-bottom: 3.75rem;
+}
+
+.qa__items {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+
+.qa__item:not(:first-child) {
+  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 
 .results {
