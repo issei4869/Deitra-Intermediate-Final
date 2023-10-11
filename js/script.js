@@ -86,9 +86,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   //Q & Aのアコーディオン
-  $('.qa-box__q').on('click',function() {
-    jQuery(this).next().slideToggle();//qa-box__qの次の兄弟要素（qa-box__a）が起動
-    jQuery(this).children('.qa-box__icon').toggleClass( 'is-open' );//slideToggleが起動した際、子要素にis-openが付与される
+  $('.qa-content__question').on('click',function() {
+    jQuery(this).next().slideToggle();//qa-content__questionの次の兄弟要素（qa-content__answer）が起動
+    $(this).toggleClass( 'is-open' );//slideToggleが起動した際、同要素（qa-content__question）にis-openが付与される
+    //jQuery(this).children('.qa-content__icon').toggleClass( 'is-open' );//slideToggleが起動した際、子要素にis-openが付与される
   });
 
   // モーダルを閉じる

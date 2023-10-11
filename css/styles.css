@@ -1126,10 +1126,10 @@ select::-ms-expand {
 }
 
 .qa-content {
-  padding: 16px;
-  padding: 1rem;
   background-color: #FFFFFF;
   border-radius: 4px;
+  padding: 16px;
+  padding: 1rem;
 }
 
 .qa-content__question {
@@ -1143,6 +1143,8 @@ select::-ms-expand {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 
 .qa-content__question::after {
@@ -1152,25 +1154,26 @@ select::-ms-expand {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   width: 17px;
   height: 17px;
   background: transparent url(../images/common/minus.png) no-repeat center center/contain;
 }
 
-.qa-content__title {
+.qa-content__question.is-open {
   position: relative;
-  margin-left: 16px;
-  margin-left: 1rem;
-  font-size: 16px;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.4285714286;
-  letter-spacing: 0.0004em;
-  padding-right: 37px;
-  padding-right: 2.3125rem;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+}
+
+.qa-content__question.is-open::after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background: transparent url(../images/common/plus.png) no-repeat center center/contain;
 }
 
 .qa-content__icon {
@@ -1196,9 +1199,27 @@ select::-ms-expand {
       flex-shrink: 0;
 }
 
+.qa-content__title {
+  position: relative;
+  margin-left: 16px;
+  margin-left: 1rem;
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4285714286;
+  letter-spacing: 0.0004em;
+  padding-right: 37px;
+  padding-right: 2.3125rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .qa-content__answer {
-  margin-top: 16px;
-  margin-top: 1rem;
+  display: none;
+}
+
+.qa-content__text {
   padding: 12px 16px 12px 12px;
   padding: 0.75rem 1rem 0.75rem 0.75rem;
   background-color: rgba(59, 105, 255, .2);
