@@ -1,0 +1,80 @@
+@use 'global' as *;
+
+.contact{
+  
+}
+
+.contact__inner{
+  
+}
+
+.contact__inner.inner{
+  @include mq('md') {
+    padding-left: rem(160);
+    padding-right: rem(160);
+  }  
+}
+
+.contact__box {
+  border-radius: 12px;
+  background-color: $white;
+  padding-left: rem(12);
+  padding-right: rem(12);
+}
+
+.contact__head{
+  margin: 0 auto;
+  padding: rem(40) rem(16);
+  //text-align: center;
+  border-radius: 12px 12px 0 0;
+  background-image: url(../images/common/contact1.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @include mq('md') {
+    padding-top: rem(60);
+    padding-bottom: rem(60);
+    //padding: rem(60) rem(242);
+    // text-align: center;
+  }
+}
+
+.contact__section-header {
+
+}
+
+.contact__section-text {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(12);
+  color: $white;
+}
+
+.contact__form{
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+}
+
+.contact__fields {
+  display: flex;
+  flex-direction: column;
+  gap: rem(32);
+}
+
+.contact__field {
+
+}
+
+.contact__privacy {
+  margin-top: rem(33);
+}
+
+.contact__btn {
+  margin-top: rem(35);
+  text-align: center;
+}
+
+
+
+
+
