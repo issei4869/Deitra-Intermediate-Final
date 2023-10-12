@@ -31,15 +31,7 @@
 
 .contactform-field__item {
   margin-top: rem(16);
-  [type="text"] {
-    padding-bottom: rem(5);
-    width: 100%;
-    font-size: rem(14);
-    font-weight: $medium;
-    border-bottom: 1px solid $black;
-    opacity: 0.5;
-  }
-
+  [type="text"],
   [type="email"] {
     padding-bottom: rem(5);
     width: 100%;
@@ -48,4 +40,14 @@
     border-bottom: 1px solid $black;
     opacity: 0.5;
   }
+}
+
+.contactform-field__radios {
+  display: flex;
+  //flex-direction: column;
+  gap: rem(40);
+}
+
+.contactform-field__radio {
+
 }

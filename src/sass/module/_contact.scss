@@ -18,8 +18,6 @@
 .contact__box {
   border-radius: 12px;
   background-color: $white;
-  padding-left: rem(12);
-  padding-right: rem(12);
 }
 
 .contact__head{
@@ -51,8 +49,7 @@
 }
 
 .contact__form{
-  padding-top: rem(40);
-  padding-bottom: rem(40);
+  padding: rem(40) rem(12);
 }
 
 .contact__fields {

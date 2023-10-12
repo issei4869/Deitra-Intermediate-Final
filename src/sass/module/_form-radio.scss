@@ -1,0 +1,50 @@
+@use 'global' as *;
+
+.form-radio {
+  
+}
+
+.form-radio__input {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.form-radio__input:checked + .form-radio__text::after {
+  opacity: 1;
+}
+
+.form-radio__text {
+  position: relative;
+  font-size: rem(16);
+  line-height: 1;
+  color: $black;
+  font-weight: $medium;
+  padding-left: rem(20);
+}
+
+.form-radio__text::before,
+.form-radio__text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.form-radio__text::before {
+  width: rem(12);
+  height: rem(12);
+  border: 1px solid #707070;
+  left: 0;
+}
+
+.form-radio__text::after {
+  width: rem(6);
+  height: rem(6);
+  background-color: $blue;
+  left: rem(3);
+  opacity: 0;
+}
