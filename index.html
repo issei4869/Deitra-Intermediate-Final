@@ -509,8 +509,20 @@
         </div>
         <form class="contact__form">
           <div class="contact__fields">
-            <div class="contact__field">
-              お問い合わせ種別
+            <!-- お問い合わせ種別 -->
+            <div class="contact__field contactform-field">
+              <div class="contactform-field__head">
+                <label for="your-age" class="contactform-field__label">お問い合わせ種別</label>
+              </div>
+              <div class="contactform-field__item">
+                <select name="" id="your-age" class="form-select">
+                  <option value="">選択してください</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                </select>
+              </div>
             </div>
             <!-- 氏名 -->
             <div class="contact__field contactform-field">
@@ -519,7 +531,8 @@
                 <span class="contactform-field__tag">必須</span>
               </div>
               <div class="contactform-field__item">
-                <input 
+                <input
+                  class="form-text"
                   type="text"
                   name=""
                   id="your-name"
@@ -535,6 +548,7 @@
               </div>
               <div class="contactform-field__item">
                 <input 
+                  class="form-text"
                   type="text"
                   name=""
                   id="your-furigana"
@@ -549,6 +563,7 @@
               </div>
               <div class="contactform-field__item">
                 <input 
+                  class="form-email"
                   type="email" 
                   name="" 
                   id="your-email" 
@@ -563,22 +578,47 @@
               </div>
               <div class="contactform-field__item">
                 <div class="contactform-field__radios">
-                  <label class="form-radio">
+                  <label class="contactform-field__radio form-radio">
                     <input class="form-radio__input" type="radio" name="your-name" id="">
                     <span class="form-radio__text">男性</span>
                   </label>
-                  <label class="form-radio">
+                  <label class="contactform-field__radio form-radio">
                     <input class="form-radio__input" type="radio" name="your-name" id="">
                     <span class="form-radio__text">女性</span>
                   </label>
                 </div>
               </div>
             </div>
-            <div class="contact__field">
-              メッセージ
+            <!-- メッセージ -->
+            <div class="contact__field contactform-field">
+              <div class="contactform-field__head">
+                <label for="your-message" class="contactform-field__label">メッセージ</label>
+              </div>
+              <div class="contactform-field__item">
+                <textarea
+                  name=""
+                  id="your-message"
+                  class="form-textarea"
+                ></textarea>
+              </div>
             </div>
           </div>
-          <div class="contact__privacy">個人情報保護方針に同意する</div>
+          <!-- プライバシーポリシー -->
+          <div class="contact__privacy">
+            <label class="form-checkbox">
+              <input
+                type="checkbox"
+                name=""
+                id=""
+                class="form-checkbox__input"
+              />
+              <span class="form-checkbox__text"
+                ><a href="" target="_blank">プライバシーポリシー</a
+                >に同意する</span
+              >
+            </label>
+          </div>
+
           <div class="contact__btn">
             <!-- オレンジボタン共通パーツ -->
             <a href="" class="orange-btn">送信する</a>

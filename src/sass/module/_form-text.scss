@@ -1,0 +1,12 @@
+// Contactフォームの共通パーツ
+
+@use 'global' as *;
+
+.form-text {
+  padding-bottom: rem(5);
+  width: 100%;
+  font-size: rem(14);
+  font-weight: $medium;
+  border-bottom: 1px solid $black;
+  opacity: 0.5;
+}

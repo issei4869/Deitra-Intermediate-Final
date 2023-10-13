@@ -1,0 +1,12 @@
+// テキストエリア共通パーツ
+
+@use 'global' as *;
+
+.form-textarea {
+  font: inherit;
+  color: inherit;
+  border: 1px solid #707070;
+  background-color: $white;
+  width: 100%;
+  height: rem(180);
+}
