@@ -3,7 +3,7 @@
 @use 'global' as *;
 
 .form-checkbox {
-  box-sizing: border-box;
+  //box-sizing: border-box;
 }
 
 .form-checkbox__input {
@@ -20,9 +20,12 @@
 
 .form-checkbox__text {
   position: relative;
-  padding-left: 30px;
-  font-size: 14px;
-  font-weight: 700;
+  width: 100%;
+  padding-left: rem(38);
+  font-size: rem(16);
+  font-weight: $bold;
+  line-height: calc(24 / 16);
+  background: url(../images/common/checkbox.png) no-repeat center center / contain;
 }
 
 .form-checkbox__text::before,
@@ -35,17 +38,20 @@
 }
 
 .form-checkbox__text::before {
-  width: 20px;
-  height: 20px;
-  border-radius: 1px;
-  border: 1px solid #111;
+  // width: rem(18);
+  // height: rem(18);
+  width: 18px;
+  height: 18px;
+  border: 1px solid #707070;
 }
 
 .form-checkbox__text::after {
-  width: 23px;
-  height: 17.53px;
-  left: -1px;
-  margin-top: -1.2px;
-  background: url(../img/check-icon.png) no-repeat center center/contain;
+  // width: rem(15.05);
+  // height: rem(11.31);
+  width: 17.05px;
+  height: 13.31px;
+  left: rem(0.5);
+  margin-top: rem(1);
+  background: url(../images/common/checkbox.png) no-repeat center center / contain;
   opacity: 0;
 }

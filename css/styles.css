@@ -725,11 +725,6 @@ select::-ms-expand {
   font-size: 0.75rem;
 }
 
-.form-checkbox {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .form-checkbox__input {
   width: 1px;
   height: 1px;
@@ -744,9 +739,14 @@ select::-ms-expand {
 
 .form-checkbox__text {
   position: relative;
-  padding-left: 30px;
-  font-size: 14px;
+  width: 100%;
+  padding-left: 38px;
+  padding-left: 2.375rem;
+  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
+  line-height: 1.5;
+  background: url(../images/common/checkbox.png) no-repeat center center/contain;
 }
 
 .form-checkbox__text::before,
@@ -760,18 +760,19 @@ select::-ms-expand {
 }
 
 .form-checkbox__text::before {
-  width: 20px;
-  height: 20px;
-  border-radius: 1px;
-  border: 1px solid #111;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #707070;
 }
 
 .form-checkbox__text::after {
-  width: 23px;
-  height: 17.53px;
-  left: -1px;
-  margin-top: -1.2px;
-  background: url(../img/check-icon.png) no-repeat center center/contain;
+  width: 17.05px;
+  height: 13.31px;
+  left: 0.5px;
+  left: 0.03125rem;
+  margin-top: 1px;
+  margin-top: 0.0625rem;
+  background: url(../images/common/checkbox.png) no-repeat center center/contain;
   opacity: 0;
 }
 
