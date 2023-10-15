@@ -35,8 +35,8 @@
 .form-checkbox__text::before {
   // width: rem(18);
   // height: rem(18);
-  width: 16px;
-  height: 16px;
+  width: rem(16);
+  height: rem(16);
   border: 1px solid #707070;
 }
 
@@ -53,11 +53,11 @@
 
 .form-checkbox__input:checked + .form-checkbox__text::after {
   //opacity: 1;
-  top: 2px;
-  left: 1px;
+  top: rem(6);
+  left: rem(1.5);
   display: block;
-  width: 12px;
-  height: 7px;
+  width: rem(12);
+  height: rem(7);
   border-left: 2px solid $blue;
   border-bottom: 2px solid $blue;
   //border-color: $blue;

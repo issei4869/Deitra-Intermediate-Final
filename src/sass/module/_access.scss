@@ -1,26 +1,84 @@
 @use 'global' as *;
 
 .access {
-  background: linear-gradient(
-    90deg, //縦に半分こ
-    $black 0%,
-    $black 76.6%,
-    $gray 76.6%,
-    $gray 100%
-  );
-}
-
-.access__inner {
-  display: flex;
-  @include mq('sp') {
-    //display: flex;
-    flex-direction: column;
+  padding-top: rem(40);
+  padding-bottom: rem(60);
+  background-color: $black;
+  @include mq('md') {
+    background: linear-gradient(
+      90deg, //縦に半分こ
+      $black 0%,
+      $black 76.6%,
+      $gray 76.6%,
+      $gray 100%
+    );
   }
 }
 
-.access__content {
-  @include mq('sp') {
-    display: contents; 
+// .access__inner {
+//   display: flex;
+//   @include mq('sp') {
+//     //display: flex;
+//     flex-direction: column;
+//   }
+// }
+
+// .access__content {
+//   @include mq('sp') {
+//     display: contents; 
+//   }
+// }
+
+// .access__address {
+//   font-size: rem(16);
+//   font-weight: $medium;
+//   line-height: calc(24 / 16);
+//   color: $white;
+//   margin-top: rem(60);
+//   @include mq('sp') {
+//     order: 2;
+//   }
+// }
+
+// .access__section-header {
+//   @include mq('sp') {
+//     order: 1;
+//   }
+// }
+
+// .access__btn {
+//   margin-top: rem(32);
+//   @include mq('sp') {
+//     order: 4;
+//   }
+// }
+
+// .access__googlemap {
+//   aspect-ratio: 726 / 520; // 横 / 高さ
+//   margin-left: rem(100);
+//   @include mq('sp') {
+//     order: 3;
+//   }
+// }
+
+// .access__googlemap iframe {
+//   width: 100%;
+//   height: 100%;
+// }
+
+.access__inner {
+  @include mq('md') {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+}
+
+.access__section-header {
+  @include mq('md') {
+    grid-area: 1 / 1 / 2 / 2;
   }
 }
 
@@ -29,30 +87,17 @@
   font-weight: $medium;
   line-height: calc(24 / 16);
   color: $white;
-  margin-top: rem(60);
-  @include mq('sp') {
-    order: 2;
-  }
-}
-
-.access__section-header {
-  @include mq('sp') {
-    order: 1;
-  }
-}
-
-.access__btn {
-  margin-top: rem(32);
-  @include mq('sp') {
-    order: 4;
+  margin-top: rem(40);
+  @include mq('md') {
+    grid-area: 2 / 1 / 3 / 2;
   }
 }
 
 .access__googlemap {
   aspect-ratio: 726 / 520; // 横 / 高さ
-  margin-left: rem(100);
-  @include mq('sp') {
-    order: 3;
+  margin-top: rem(24);
+  @include mq('md') {
+    grid-area: 1 / 2 / 4 / 3;
   }
 }
 
@@ -60,3 +105,11 @@
   width: 100%;
   height: 100%;
 }
+
+.access__btn {
+  margin-top: rem(32);
+  @include mq('md') {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+}
+
