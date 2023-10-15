@@ -733,20 +733,14 @@ select::-ms-expand {
   overflow: hidden;
 }
 
-.form-checkbox__input:checked + .form-checkbox__text::after {
-  opacity: 1;
-}
-
 .form-checkbox__text {
   position: relative;
-  width: 100%;
   padding-left: 38px;
   padding-left: 2.375rem;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.5;
-  background: url(../images/common/checkbox.png) no-repeat center center/contain;
 }
 
 .form-checkbox__text::before,
@@ -760,20 +754,21 @@ select::-ms-expand {
 }
 
 .form-checkbox__text::before {
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   border: 1px solid #707070;
 }
 
-.form-checkbox__text::after {
-  width: 17.05px;
-  height: 13.31px;
-  left: 0.5px;
-  left: 0.03125rem;
-  margin-top: 1px;
-  margin-top: 0.0625rem;
-  background: url(../images/common/checkbox.png) no-repeat center center/contain;
-  opacity: 0;
+.form-checkbox__input:checked + .form-checkbox__text::after {
+  top: 2px;
+  left: 1px;
+  display: block;
+  width: 12px;
+  height: 7px;
+  border-left: 2px solid #3B69FF;
+  border-bottom: 2px solid #3B69FF;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .form-email {
@@ -853,6 +848,11 @@ select::-ms-expand {
   font-weight: 500;
   padding: 12px;
   padding: 0.75rem;
+  background-image: url(../images/common/select-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center right 12px;
+  background-position: center right 0.75rem;
+  background-size: 1rem 0.875rem;
 }
 
 .form-text {

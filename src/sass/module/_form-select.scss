@@ -11,5 +11,8 @@
   background-color: $white;
   font-weight: $medium;
   padding: rem(12);
-  //background: url(../img/select-arrow.png) no-repeat center right rem(12)/13.217px 10.182px;
+  background-image: url(../images/common/select-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center right rem(12);
+  background-size: rem(16) rem(14);
 }
