@@ -264,7 +264,10 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .access__googlemap {
-    grid-area: 1/2/4/3;
+    grid-area: 1/2/6/6;
+    aspect-ratio: 726/520;
+    margin-top: 0;
+    padding-left: 1.5rem;
   }
 }
 

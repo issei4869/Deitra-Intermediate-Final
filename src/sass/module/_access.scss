@@ -97,7 +97,10 @@
   aspect-ratio: 726 / 520; // 横 / 高さ
   margin-top: rem(24);
   @include mq('md') {
-    grid-area: 1 / 2 / 4 / 3;
+    grid-area: 1 / 2 / 6 / 6;
+    aspect-ratio: 726 / 520; // 横 / 高さ
+    margin-top: 0;
+    padding-left: rem(24);
   }
 }
 
