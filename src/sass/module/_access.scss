@@ -86,7 +86,7 @@
 .access__inner {
   @include mq('md') {
     display: grid;
-    grid-template-columns: minmax(rem(100),auto) auto rem(100) minmax(auto,rem(726)) minmax(rem(40),auto);
+    grid-template-columns: minmax(rem(100),auto) minmax(auto,rem(314)) rem(100) minmax(auto,rem(726)) minmax(40px,auto);
     grid-template-rows: rem(120) auto rem(60) rem(64) rem(32) auto rem(136) rem(120);
     grid-column-gap: 0px;
     grid-row-gap: 0px;

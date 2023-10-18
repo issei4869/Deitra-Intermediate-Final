@@ -240,7 +240,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .access__inner {
     display: grid;
-    grid-template-columns: minmax(6.25rem, auto) auto 6.25rem minmax(auto, 45.375rem) minmax(2.5rem, auto);
+    grid-template-columns: minmax(6.25rem, auto) minmax(auto, 19.625rem) 6.25rem minmax(auto, 45.375rem) minmax(40px, auto);
     grid-template-rows: 7.5rem auto 3.75rem 4rem 2rem auto 8.5rem 7.5rem;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
