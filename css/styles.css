@@ -224,8 +224,6 @@ select::-ms-expand {
   .access {
     padding-top: 0;
     padding-bottom: 0;
-    background: -webkit-gradient(linear, left top, left bottom, from(#3E3E3E), color-stop(66.3%, #3E3E3E), color-stop(66.3%, #F3F3F3), to(#F3F3F3));
-    background: linear-gradient(180deg, #3E3E3E 0%, #3E3E3E 66.3%, #F3F3F3 66.3%, #F3F3F3 100%);
     background: -webkit-gradient(linear, left top, right top, from(#3E3E3E), color-stop(76.6%, #3E3E3E), color-stop(76.6%, #F3F3F3), to(#F3F3F3));
     background: linear-gradient(90deg, #3E3E3E 0%, #3E3E3E 76.6%, #F3F3F3 76.6%, #F3F3F3 100%);
   }
@@ -235,13 +233,14 @@ select::-ms-expand {
   .access__inner.inner {
     padding-left: 0;
     padding-right: 0;
+    max-width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .access__inner {
     display: grid;
-    grid-template-columns: minmax(6.25rem, auto) 19.625rem 6.25rem minmax(auto, 45.375rem) minmax(2.5rem, auto);
+    grid-template-columns: minmax(6.25rem, auto) auto 6.25rem minmax(auto, 45.375rem) minmax(2.5rem, auto);
     grid-template-rows: 7.5rem auto 3.75rem 4rem 2rem auto 8.5rem 7.5rem;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -303,6 +302,14 @@ select::-ms-expand {
     margin-top: 2rem;
     text-align: left;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .access__background {
+    grid-area: 7/1/9/6;
+    background-color: #F3F3F3;
+    z-index: 99;
   }
 }
 

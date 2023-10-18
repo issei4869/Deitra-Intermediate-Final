@@ -7,13 +7,13 @@
   @include mq('md') {
     padding-top: 0;
     padding-bottom: 0;
-    background: linear-gradient(
-      180deg, //横に半分こ
-      $black 0%,
-      $black 66.3%,
-      $gray 66.3%,
-      $gray 100%
-    );
+    // background: linear-gradient(
+    //   180deg, //横に半分こ
+    //   $black 0%,
+    //   $black 66.3%,
+    //   $gray 66.3%,
+    //   $gray 100%
+    // );
     background: linear-gradient(
       90deg,
       $black 0%,
@@ -28,6 +28,7 @@
   @include mq('md') {
     padding-left: 0;
     padding-right: 0;
+    max-width: 100%;
   }
 }
 
@@ -82,24 +83,10 @@
 //   height: 100%;
 // }
 
-.access__background {
-  @include mq('md') {
-    // background: linear-gradient(
-    //   180deg, //横に半分こ
-    //   $black 0%,
-    //   $black 66.3%,
-    //   $gray 66.3%,
-    //   $gray 100%
-    // );
-  }
-}
-
-
-
 .access__inner {
   @include mq('md') {
     display: grid;
-    grid-template-columns: minmax(rem(100),auto) rem(314) rem(100) minmax(auto,rem(726)) minmax(rem(40),auto);
+    grid-template-columns: minmax(rem(100),auto) auto rem(100) minmax(auto,rem(726)) minmax(rem(40),auto);
     grid-template-rows: rem(120) auto rem(60) rem(64) rem(32) auto rem(136) rem(120);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -157,11 +144,11 @@
   }
 }
 
-// .access__background {
-//   @include mq('md') {
-//     grid-area: 7 / 1 / 9 / 6;
-//     background-color: $gray;
-//     z-index: 99;
-//   }
-// }
+.access__background {
+  @include mq('md') {
+    grid-area: 7 / 1 / 9 / 6;
+    background-color: $gray;
+    z-index: 99;
+  }
+}
 
