@@ -8,7 +8,7 @@
   background-position: center center;
   background-size: cover;
   @include mq('md') {
-    margin-top: rem(256);
+    margin-top: 0;
     padding-top: rem(60);
     padding-bottom: rem(60)
   }
