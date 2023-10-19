@@ -2,7 +2,9 @@
 .news {
   position: relative;
   padding: 0 rem(16) rem(60) rem(16);
-  //background-color: $gray;
+  @include mq('md') {
+    padding: rem(120) rem(40);
+  }
 }
 
 .news__inner {
@@ -12,10 +14,11 @@
   background-color: $white;
   box-shadow: 0 5px 12px rgba(#3E3E3E33, 1);
   position: relative;
-  // @include mq('md') {
-  //   display: flex;
-  //   justify-content: center;
-  // }
+  @include mq('md') {
+    padding-left: rem(60);
+    padding-right: rem(60);
+    padding-top: rem(60);
+  }
 }
 
 .news::after {
@@ -28,8 +31,7 @@
 .news__items {
   margin-top: rem(32);
   @include mq('md') {
-    margin-top: 0;
-    margin-left: rem(50);
+    margin-top: rem(60);
   }
 }
 
@@ -40,11 +42,10 @@
 .news__item + .news__item {
   //margin-top: rem(40);
   @include mq('md') {
-    padding-top: rem(15);
+    
   }
 }
 
-//この書き方でもOK
 .news__item:first-child {
   border-top: 1px solid #CECDCD;
 }

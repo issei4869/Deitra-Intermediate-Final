@@ -11,6 +11,12 @@
   color: $white;
   transition: all 0.3s ease 0s;
   box-shadow: 0 3px 5px rgba(#3E3E3E33, 1);
+  @include mq('md') {
+    font-size: rem(18);
+    letter-spacing: 0.00045em;
+    padding-left: rem(50);
+    padding-right: rem(50);
+  }
 }
 
 .orange-btn:hover {

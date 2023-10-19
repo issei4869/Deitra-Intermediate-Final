@@ -12,19 +12,20 @@
 
 .mv__inner {
   //padding: 0 rem(30) 0 rem(50);
+  display: flex;
+  justify-content: center;
 }
 
 .mv__header {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: rem(16);
+  //left: rem(16);
   color: $black;
   @include mq('md') {
-    width: 100%;
+    //width: 100%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+    padding-right: rem(40);
   }
 }
 
@@ -57,6 +58,7 @@
   text-align: center;
   @include mq('md') {
     font-size: rem(40);
+    text-align: left;
   }
 }
 

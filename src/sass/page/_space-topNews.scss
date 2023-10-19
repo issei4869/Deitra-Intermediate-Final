@@ -4,6 +4,6 @@
   margin-top: rem(-40);
   background-color: $gray;
   @include mq('md') {
-    margin-top: rem(60);
+    margin-top: 0;
   }
 }
