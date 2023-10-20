@@ -1,12 +1,21 @@
 @use 'global' as *; 
 
 .results {
-  background-color: $black;
-  padding: rem(40) 0;
+  
+  
+  @include mq('md') {
+    background-color: $gray;
+    padding-left: rem(40);
+  }
 }
 
 .results__inner.inner {
+  padding: rem(40) 0 rem(40) rem(16);
+  background-color: $black;
   padding-right: 0;
+  @include mq('md') {
+    padding: rem(60) 0 rem(60) rem(60);
+  }
 }
 
 .results__content {
@@ -25,4 +34,7 @@
 .results__btn {
   text-align: center;
   margin-top: rem(68);
+  @include mq('md') {
+    text-align: left;
+  }
 }
