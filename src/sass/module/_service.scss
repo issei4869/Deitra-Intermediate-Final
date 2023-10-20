@@ -10,10 +10,24 @@
     $gray 53%,
     $gray 100%
   );
+  @include mq('md') {
+    padding-top: rem(60);
+    padding-bottom: rem(120);
+    background: linear-gradient(
+      180deg, //縦に半分こ
+      $black 0%,
+      $black 65%,
+      $gray 65%,
+      $gray 100%
+    );
+  }
 }
 
-.service__inner {
-  
+.service__inner.inner {
+  @include mq('md') {
+    padding-left: rem(160);
+    padding-right: rem(160);
+  }
 }
 
 .service__items {
@@ -22,10 +36,19 @@
   //margin-bottom: rem(60);
   background-color: $white;
   box-shadow: 0 5px 12px rgba(#3E3E3E33, 1);
+  @include mq('md') {
+    display: flex;
+    gap: rem(90);
+    padding: rem(60) rem(45);
+    margin-top: rem(60);
+  }
 }
 
 .service__item {
   padding: rem(20) rem(16);
+  @include mq('md') {
+    padding: 0;
+  }
 }
 
 .service__item:first-child {

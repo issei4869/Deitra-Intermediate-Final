@@ -34,6 +34,9 @@
   text-align: center;
   line-height: calc(24 / 20);
   color: $black;
+  @include mq('md') {
+    line-height: calc(28 / 20);
+  }
 }
 
 .service-content__text {
