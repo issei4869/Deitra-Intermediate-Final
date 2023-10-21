@@ -20,7 +20,11 @@
   padding-left: rem(38);
   font-size: rem(16);
   font-weight: $bold;
-  line-height: calc(24 / 16);
+  line-height: 1;
+  @include mq('md') {
+    font-size: rem(18);
+    padding-left: rem(40);
+  }
 }
 
 .form-checkbox__text::before,
@@ -28,8 +32,8 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 42%;
+  transform: translateY(-42%);
 }
 
 .form-checkbox__text::before {
@@ -38,6 +42,10 @@
   width: rem(16);
   height: rem(16);
   border: 1px solid #707070;
+  @include mq('md') {
+    width: rem(18);
+    height: rem(18);
+  }
 }
 
 .form-checkbox__text::after {

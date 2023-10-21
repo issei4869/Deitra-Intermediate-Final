@@ -50,6 +50,9 @@
 
 .contact__form{
   padding: rem(40) rem(12);
+  @include mq('md') {
+    padding: rem(60) rem(120);
+  }
 }
 
 .contact__fields {
