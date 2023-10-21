@@ -10,3 +10,14 @@
   border-bottom: 1px solid $black;
   opacity: 0.5;
 }
+
+.form-text:hover {
+  border-bottom: 1px solid #4973FF;
+  box-shadow: 0 5px 4px -4px rgba(#4973FF80, 1);
+}
+
+.form-text:focus {
+  outline: none;
+  border-bottom: 1px solid #4973FF;
+  box-shadow: 0 5px 4px -4px rgba(#4973FF80, 1);
+}

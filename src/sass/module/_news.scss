@@ -39,6 +39,10 @@
   border-bottom: 1px solid #CECDCD;
 }
 
+.news__item:hover {
+  background-color: #4973FF1A;
+}
+
 .news__item + .news__item {
   //margin-top: rem(40);
   @include mq('md') {

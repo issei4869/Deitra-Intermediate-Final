@@ -43,6 +43,16 @@
   left: 0;
 }
 
+.form-radio__text:hover::before {
+  border: 1px solid #3B69FF;
+  box-shadow: 0 0 6px rgba(#4973FF33, 1);
+}
+
+.form-radio__text:hover::before {
+  border: 1px solid #3B69FF;
+  box-shadow: 0 0 6px rgba(#4973FF33, 1);
+}
+
 .form-radio__text::after {
   width: rem(6);
   height: rem(6);

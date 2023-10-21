@@ -10,3 +10,14 @@
   width: 100%;
   height: rem(180);
 }
+
+.form-textarea:hover {
+  border: 1px solid #4973FF;
+  box-shadow: 0 0 8px rgba(#4973FF80, 1);
+}
+
+.form-textarea:focus {
+  outline: none;
+  border: 1px solid #4973FF;
+  box-shadow: 0 0 8px rgba(#4973FF80, 1);
+}

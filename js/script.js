@@ -1,28 +1,21 @@
+//ページトップへ戻るボタン（スクロールして出てくるタイプ）
+var pagetop = $('#page-topbtn');
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 100) {
+    jQuery('.page-top').addClass( 'is-show' );
+  } else {
+    jQuery('.page-top').removeClass( 'is-show' );
+  }
+});
+
+pagetop.click(function () {
+  $('body, html').animate({ scrollTop: 0 }, 500);
+  return false;
+});
+
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-
-  var topBtn = $('.pagetop');
-  topBtn.hide();
-
-  // ボタンの表示設定
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 70) {
-      // 指定px以上のスクロールでボタンを表示
-      topBtn.fadeIn();
-    } else {
-      // 画面が指定pxより上ならボタンを非表示
-      topBtn.fadeOut();
-    }
-  });
-
-  // ボタンをクリックしたらスクロールして上に戻る
-  topBtn.click(function () {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 300, 'swing');
-    return false;
-  });
-
+  
   //ドロワーメニュー
   $(".js-hamburger").click(function () {
     //js-hamburgerをクリックしたとき、is-activeクラスがある場合
@@ -51,26 +44,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
-
-  //ドロワーアイコン選択したところにのみ下線
-  // $('.pc-nav__item a').on('click',function() {
-  //   jQuery('.pc-nav__item a').removeClass( 'is-active' );
-  //   jQuery(this).addClass( 'is-active' );
-  //   return false;
-  // });
-
-  //カルーセル（スライダー）
-  // var swiper = new Swiper(".js-results-swiper", {
-  //   slidesPerView: 4,
-  //   centeredSlides: true,
-  //   spaceBetween: 30,
-  //   grabCursor: true,
-  //   pagination: {
-  //     el: ".js-results-pagination",
-  //     clickable: true,
-  //   },
-  // });
-
+  
+  //カルーセル
   var swiper = new Swiper('.js-results-swiper', {
     slidesPerView: 1.3,
     spaceBetween: 20,
