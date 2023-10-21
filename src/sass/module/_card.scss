@@ -6,6 +6,9 @@
 
 .card__img {
   aspect-ratio: 274 / 171; // 横 / 高さ
+  @include mq('md') {
+    aspect-ratio: 400 / 250;
+  }
 }
   
 .card__img img {
@@ -17,6 +20,14 @@
 .card__body {
   padding: rem(12);
   background-color: $white;
+  @include mq('md') {
+    padding: rem(16);
+  }
+}
+
+.card__title,
+.card__text {
+  
 }
 
 .card__title {
@@ -25,6 +36,11 @@
   line-height: calc(16 / 14);
   letter-spacing: 0.00001em;
   color: $black;
+  @include mq('md') {
+    font-size: rem(20);
+    line-height: calc(24 / 20);
+    letter-spacing: 0;
+  }
 }
 
 .card__text {
@@ -34,5 +50,10 @@
   letter-spacing: 0.00001em;
   color: $black;
   margin-top: rem(12);
+  @include mq('md') {
+    font-size: rem(16);
+    line-height: calc(24 / 16);
+    margin-top: rem(16);
+  }
 }
 

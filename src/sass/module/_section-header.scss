@@ -19,3 +19,9 @@
 .section-header--left {
   text-align: left;
 }
+
+.section-header--sp {
+  @include mq('md') {
+    text-align: left;
+  }
+}

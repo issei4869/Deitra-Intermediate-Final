@@ -45,5 +45,7 @@
   font-weight: $medium;
   line-height: calc(24 / 14);
   color: $black;
+  display: flex;
   text-align: left;
+  justify-content: center;
 }

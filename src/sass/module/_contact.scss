@@ -46,6 +46,9 @@
   justify-content: center;
   margin-top: rem(12);
   color: $white;
+  @include mq('md') {
+    margin-top: rem(16);
+  }
 }
 
 .contact__form{
@@ -72,6 +75,10 @@
 .contact__btn {
   margin-top: rem(35);
   text-align: center;
+  @include mq('md') {
+    margin-top: rem(40);
+    text-align: left;
+  }
 }
 
 

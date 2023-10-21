@@ -6,6 +6,7 @@
   // height: rem(20);
   text-align: center;
   @include mq('md') {
+    bottom: rem(-60);
     text-align: left;
   }
 }

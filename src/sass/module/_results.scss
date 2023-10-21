@@ -25,6 +25,9 @@
 .results__items {
   margin-top: rem(40);
   position: relative;
+  @include mq('md') {
+    margin-top: rem(60);
+  }
 }
 
 .swiper-slide.results__item {
@@ -36,5 +39,6 @@
   margin-top: rem(68);
   @include mq('md') {
     text-align: left;
+    margin-top: rem(100);
   }
 }

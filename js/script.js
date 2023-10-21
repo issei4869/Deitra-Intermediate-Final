@@ -72,8 +72,16 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   // });
 
   var swiper = new Swiper('.js-results-swiper', {
-    lidesPerView: 1.3,
+    slidesPerView: 1.3,
     spaceBetween: 20,
+
+    breakpoints: {
+      // 768px以上の場合
+      768: {
+        slidesPerView: 2.7,
+        spaceBetween: 40,
+      }
+    },
   
     navigation: {
       nextEl: '.swiper-button-next',

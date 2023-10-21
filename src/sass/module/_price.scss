@@ -13,8 +13,10 @@
 }
 
 .price__inner.inner {
-  padding-left: rem(160);
-  padding-right: rem(160);
+  @include mq('md') {
+    padding-left: rem(160);
+    padding-right: rem(160);
+  }
 }
 
 .price__items {

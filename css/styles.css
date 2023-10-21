@@ -354,6 +354,11 @@ select::-ms-expand {
 .card__img {
   aspect-ratio: 274/171;
 }
+@media screen and (min-width: 768px) {
+  .card__img {
+    aspect-ratio: 400/250;
+  }
+}
 
 .card__img img {
   width: 100%;
@@ -367,6 +372,11 @@ select::-ms-expand {
   padding: 0.75rem;
   background-color: #FFFFFF;
 }
+@media screen and (min-width: 768px) {
+  .card__body {
+    padding: 1rem;
+  }
+}
 
 .card__title {
   font-size: 14px;
@@ -375,6 +385,13 @@ select::-ms-expand {
   line-height: 1.1428571429;
   letter-spacing: 0.00001em;
   color: #3E3E3E;
+}
+@media screen and (min-width: 768px) {
+  .card__title {
+    font-size: 1.25rem;
+    line-height: 1.2;
+    letter-spacing: 0;
+  }
 }
 
 .card__text {
@@ -386,6 +403,13 @@ select::-ms-expand {
   color: #3E3E3E;
   margin-top: 12px;
   margin-top: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .card__text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+  }
 }
 
 .comments-content {
@@ -558,6 +582,11 @@ select::-ms-expand {
   margin-top: 0.75rem;
   color: #FFFFFF;
 }
+@media screen and (min-width: 768px) {
+  .contact__section-text {
+    margin-top: 1rem;
+  }
+}
 
 .contact__form {
   padding: 40px 12px;
@@ -590,6 +619,12 @@ select::-ms-expand {
   margin-top: 35px;
   margin-top: 2.1875rem;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .contact__btn {
+    margin-top: 2.5rem;
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1555,6 +1590,8 @@ select::-ms-expand {
   padding-bottom: 16px;
   padding-bottom: 1rem;
   text-align: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 @media screen and (min-width: 768px) {
   .price-content__title {
@@ -1572,6 +1609,8 @@ select::-ms-expand {
   padding-left: 24px;
   padding-left: 1.5rem;
   width: 70.845481%;
+  -ms-flex-wrap: 1;
+      flex-wrap: 1;
 }
 @media screen and (min-width: 768px) {
   .price-content__yen {
@@ -1595,11 +1634,11 @@ select::-ms-expand {
   }
 }
 
-.price__inner.inner {
-  padding-left: 160px;
-  padding-left: 10rem;
-  padding-right: 160px;
-  padding-right: 10rem;
+@media screen and (min-width: 768px) {
+  .price__inner.inner {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
 }
 
 .price__items {
@@ -1812,6 +1851,11 @@ select::-ms-expand {
   margin-top: 2.5rem;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .results__items {
+    margin-top: 3.75rem;
+  }
+}
 
 .swiper-slide.results__item {
   margin-right: 20px;
@@ -1826,6 +1870,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .results__btn {
     text-align: left;
+    margin-top: 6.25rem;
   }
 }
 
@@ -1850,6 +1895,12 @@ select::-ms-expand {
 
 .section-header--left {
   text-align: left;
+}
+
+@media screen and (min-width: 768px) {
+  .section-header--sp {
+    text-align: left;
+  }
 }
 
 .service-content {
@@ -1905,7 +1956,13 @@ select::-ms-expand {
   font-weight: 500;
   line-height: 1.7142857143;
   color: #3E3E3E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .service {
@@ -2057,6 +2114,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: -3.75rem;
     text-align: left;
   }
 }
