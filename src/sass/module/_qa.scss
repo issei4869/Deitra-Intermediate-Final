@@ -15,8 +15,24 @@
 
 .qa__items {
   margin-top: rem(40);
+  @include mq('md') {
+    margin-top: rem(60);
+    
+  }
+}
+
+.qa__item {
+  @include mq('md') {
+    position: relative;
+    max-width: rem(612);
+    left: 49%;
+  }
 }
 
 .qa__item:not(:first-child)  {
   margin-top: rem(24);
+  @include mq('md') {
+    margin-top: rem(32);
+  }
 }
+

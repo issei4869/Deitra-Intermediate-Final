@@ -59,10 +59,13 @@
   margin-left: rem(16);
   font-size: rem(16);
   font-weight: $bold;
-  line-height: calc(20 / 14);
+  line-height: calc(20 / 16);
   letter-spacing: 0.0004em;
   padding-right: rem(37);
   flex-grow: 1;
+  @include mq('md') {
+    line-height: calc(24 / 16);
+  }
 }
 
 .qa-content__answer {
@@ -78,4 +81,9 @@
   color: $black;
   line-height: calc(20 / 14);
   margin-top: rem(16);
+  @include mq('md') {
+    padding: rem(16);
+    font-size: rem(16);
+    line-height: calc(24 / 16);
+  }
 }

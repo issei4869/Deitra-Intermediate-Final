@@ -1403,23 +1403,33 @@ select::-ms-expand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 20px;
   font-size: 1.25rem;
+  line-height: 1;
   border: 1px solid #707070;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .price-content {
+    font-size: 1.5rem;
+  }
 }
 
 .price-content__title {
   color: #FFFFFF;
   background-color: #3E3E3E;
+  font-weight: 600;
   width: 29.154519%;
-  text-align: center;
   padding-top: 16px;
   padding-top: 1rem;
   padding-bottom: 16px;
   padding-bottom: 1rem;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .price-content__title {
@@ -1455,13 +1465,26 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .price {
-    padding-bottom: 18.25rem;
+    padding-top: 7.5rem;
+    padding-bottom: 16.75rem;
   }
+}
+
+.price__inner.inner {
+  padding-left: 160px;
+  padding-left: 10rem;
+  padding-right: 160px;
+  padding-right: 10rem;
 }
 
 .price__items {
   margin-top: 40px;
   margin-top: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .price__items {
+    margin-top: 3.75rem;
+  }
 }
 
 .price__item:not(:first-child) {
@@ -1476,6 +1499,11 @@ select::-ms-expand {
   color: #3E3E3E;
   margin-top: 8px;
   margin-top: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  .price__note {
+    margin-top: 0.75rem;
+  }
 }
 
 .qa-content {
@@ -1557,13 +1585,18 @@ select::-ms-expand {
   font-size: 16px;
   font-size: 1rem;
   font-weight: 700;
-  line-height: 1.4285714286;
+  line-height: 1.25;
   letter-spacing: 0.0004em;
   padding-right: 37px;
   padding-right: 2.3125rem;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+@media screen and (min-width: 768px) {
+  .qa-content__title {
+    line-height: 1.5;
+  }
 }
 
 .qa-content__answer {
@@ -1583,6 +1616,13 @@ select::-ms-expand {
   margin-top: 16px;
   margin-top: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .qa-content__text {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
 
 .qa {
   background-image: url(../images/common/qa-bg.png);
@@ -1599,10 +1639,28 @@ select::-ms-expand {
   margin-top: 40px;
   margin-top: 2.5rem;
 }
+@media screen and (min-width: 768px) {
+  .qa__items {
+    margin-top: 3.75rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .qa__item {
+    position: relative;
+    max-width: 38.25rem;
+    left: 49%;
+  }
+}
 
 .qa__item:not(:first-child) {
   margin-top: 24px;
   margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .qa__item:not(:first-child) {
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (min-width: 768px) {

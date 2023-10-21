@@ -7,16 +7,21 @@
   position: relative;
   z-index: 99;
   @include mq('md') {
-    padding-bottom: rem(292);
+    padding-top: rem(120);
+    padding-bottom: rem(268);
   }
 }
 
-.price__inner {
-
+.price__inner.inner {
+  padding-left: rem(160);
+  padding-right: rem(160);
 }
 
 .price__items {
   margin-top: rem(40);
+  @include mq('md') {
+    margin-top: rem(60);
+  }
 }
 
 .price__item {
@@ -33,5 +38,8 @@
   line-height: 1;
   color: $black;
   margin-top: rem(8);
+  @include mq('md') {
+    margin-top: rem(12);
+  }
 }
 
