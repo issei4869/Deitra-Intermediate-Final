@@ -4,9 +4,10 @@
   position: fixed;
   background-image: url(../images/common/hamburger.png);
   background-repeat: no-repeat;
-  background-position: right right;
+  //background-position: top rem(24) right rem(16);
+  background-position: center right calc(rem(16) + rem(26) - rem(16));
   background-size: contain;
-  width: rem(26);
+  width: 100%;
   height: rem(20);
   // top: rem(24);
   // right: rem(16);
