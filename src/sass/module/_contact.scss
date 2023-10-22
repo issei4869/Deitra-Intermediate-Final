@@ -22,13 +22,15 @@
 
 .contact__head{
   margin: 0 auto;
-  padding: rem(40) rem(16);
-  //text-align: center;
   border-radius: 12px 12px 0 0;
   background-image: url(../images/common/contact1.png);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background-position: top center;
+  background-size: contain;
+  padding: rem(43) rem(16);
+  //text-align: center;
+  
+  
   @include mq('md') {
     padding-top: rem(60);
     padding-bottom: rem(60);
@@ -46,6 +48,8 @@
   justify-content: center;
   margin-top: rem(12);
   color: $white;
+  font-size: rem(14);
+  font-weight: $medium;
   @include mq('md') {
     margin-top: rem(16);
   }

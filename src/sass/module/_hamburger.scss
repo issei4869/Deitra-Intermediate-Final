@@ -5,7 +5,7 @@
   background-image: url(../images/common/hamburger.png);
   background-repeat: no-repeat;
   //background-position: top rem(24) right rem(16);
-  background-position: center right calc(rem(16) + rem(26) - rem(16));
+  background-position: center right rem(31);
   background-size: contain;
   width: 100%;
   height: rem(20);
@@ -20,13 +20,17 @@
   }
 }
 
-.hamburger span {
-  position: relative;
-  width: inherit;
-  height: rem(2);
-  background-color: $black;
-  transition: transform 0.5s ease 0s;
+.hamburger.is-active {
+  display: none;
 }
+
+// .hamburger span {
+//   position: relative;
+//   width: inherit;
+//   height: rem(2);
+//   background-color: $black;
+//   transition: transform 0.5s ease 0s;
+// }
 
 // .hamburger span:nth-child(1) {
 //   position: absolute;
@@ -44,25 +48,46 @@
 //   top: 85%;
 // }
 
-.hamburger.is-active {
+
+
+.cross {
+
+}
+
+.cross.is-active {
+  position: fixed;
+  position: absolute;
+  background-image: url(../../images/common/batsu.png);
+  background-repeat: no-repeat;
+  //background-position: top rem(24) right rem(16);
+  background-position: center right rem(31);
+  background-size: contain;
+  width: 100%;
+  height: rem(20);
+  z-index: 1000;
+  display: inline-block;
+  transition: transform 0.5s ease 0s;
+}
+
+.cross.is-active {
   transform: translateX(rem(-316));
 }
 
-.hamburger.is-active span:nth-child(1) {
-  position: absolute;
-  top: 60%;
-  transform: rotate(45deg);
-  background-color: $white;
-}
+// .cross.is-active span:nth-child(1) {
+//   position: absolute;
+//   top: 60%;
+//   transform: rotate(45deg);
+//   background-color: $white;
+// }
 
 // .hamburger.is-active span:nth-child(2) {
 //   top: 51%;
 //   opacity: 0;
 // }
 
-.hamburger.is-active span:nth-child(3) {
-  position: absolute;
-  top: 60%;
-  transform: rotate(-45deg);
-  background-color: $white;
-}
+// .cross.is-active span:nth-child(3) {
+//   position: absolute;
+//   top: 60%;
+//   transform: rotate(-45deg);
+//   background-color: $white;
+// }

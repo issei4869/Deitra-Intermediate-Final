@@ -10,9 +10,9 @@
 }
 
 .results__inner.inner {
-  padding: rem(40) 0 rem(40) rem(16);
+  padding: rem(40) 0;
+  //padding: rem(40) 0 rem(40) rem(16);
   background-color: $black;
-  padding-right: 0;
   @include mq('md') {
     padding: rem(60) 0 rem(60) rem(60);
   }
@@ -23,7 +23,8 @@
 }
 
 .results__items {
-  margin-top: rem(40);
+  margin-top: rem(45);
+  padding-left: rem(16);
   position: relative;
   @include mq('md') {
     margin-top: rem(60);
@@ -31,12 +32,12 @@
 }
 
 .swiper-slide.results__item {
-  margin-right: rem(20);
+  //margin-right: rem(20);
 }
 
 .results__btn {
   text-align: center;
-  margin-top: rem(68);
+  margin-top: rem(69);
   @include mq('md') {
     text-align: left;
     margin-top: rem(100);

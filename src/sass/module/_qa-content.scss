@@ -3,7 +3,7 @@
 .qa-content {
   background-color: $white;
   border-radius: 4px;
-  padding: rem(16);
+  padding: rem(16.5) rem(16) rem(16) rem(16);
 }
 
 .qa-content__question {
@@ -20,8 +20,8 @@
   top: 50%; //上下中央
   transform: translateY(-50%); //上下中央
   transition: all 0.3s ease 0s;
-  width: 17px; //アイコンの横幅
-  height: 17px; //アイコンの縦幅
+  width: 15px; //アイコンの横幅
+  height: 15px; //アイコンの縦幅
   background: transparent url(../images/common/minus.png) no-repeat center center / contain;
 }
 
@@ -31,7 +31,7 @@
 
 .qa-content__question.is-open::after {
   position: absolute;
-  right: 0; 
+  right: 0;  
   top: 50%; //上下中央
   transform: translateY(-50%) rotate(90deg); //上下中央に、90度回転
   transition: all 0.3s ease 0s;
@@ -59,8 +59,8 @@
   margin-left: rem(16);
   font-size: rem(16);
   font-weight: $bold;
-  line-height: calc(20 / 16);
-  letter-spacing: 0.0004em;
+  line-height: 1.45;
+  letter-spacing: 0.4px;
   padding-right: rem(37);
   flex-grow: 1;
   @include mq('md') {
@@ -73,14 +73,14 @@
 }
 
 .qa-content__text {
-  padding: rem(12) rem(16) rem(12) rem(12);
+  padding: rem(11) rem(16) rem(7) rem(12);
   background-color: #3B69FF33;
   border-radius: 4px;
   font-size: rem(14);
   font-weight: $medium;
   color: $black;
   line-height: calc(20 / 14);
-  margin-top: rem(16);
+  margin-top: rem(14);
   @include mq('md') {
     padding: rem(16);
     font-size: rem(16);

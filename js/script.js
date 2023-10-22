@@ -47,7 +47,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   
   //カルーセル
   var swiper = new Swiper('.js-results-swiper', {
-    slidesPerView: 1.3,
+    slidesPerView: 1.29,
     spaceBetween: 20,
 
     breakpoints: {

@@ -26,7 +26,7 @@
 }
 
 .service-content__title {
-  //margin-top: rem(8);
+  margin-top: rem(1);
   font-size: rem(20);
   font-weight: $semibold;
   font-family: $english-family;
@@ -40,7 +40,7 @@
 }
 
 .service-content__text {
-  margin-top: rem(20); 
+  margin-top: rem(16); 
   font-size: rem(14);
   font-weight: $medium;
   line-height: calc(24 / 14);

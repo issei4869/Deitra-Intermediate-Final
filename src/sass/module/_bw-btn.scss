@@ -1,7 +1,7 @@
 @use 'global' as *;
 
 .bw-btn {
-  padding: rem(16) rem(100);
+  padding: rem(16) rem(97);
   //background-color:  transparent; 
   display: inline-block;
   line-height: 1;
@@ -17,6 +17,10 @@
     font-size: rem(20);
     letter-spacing: 1.8px;
   }
+}
+
+.bw-btn--access {
+  letter-spacing: 2px;
 }
 
 .bw-btn:hover {
