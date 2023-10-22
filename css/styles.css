@@ -1121,16 +1121,16 @@ select::-ms-expand {
 
 .hamburger {
   position: fixed;
+  background-image: url(../images/common/hamburger.png);
+  background-repeat: no-repeat;
+  background-position: right right;
+  background-size: contain;
   width: 26px;
   width: 1.625rem;
   height: 20px;
   height: 1.25rem;
-  top: 24px;
-  top: 1.5rem;
-  right: 16px;
-  right: 1rem;
   z-index: 1000;
-  display: block;
+  display: inline-block;
   -webkit-transition: -webkit-transform 0.5s ease 0s;
   transition: -webkit-transform 0.5s ease 0s;
   transition: transform 0.5s ease 0s;
@@ -1154,40 +1154,21 @@ select::-ms-expand {
   transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
 }
 
-.hamburger span:nth-child(1) {
-  position: absolute;
-  top: 15%;
-}
-
-.hamburger span:nth-child(2) {
-  position: absolute;
-  top: 51%;
-  opacity: 1;
-}
-
-.hamburger span:nth-child(3) {
-  position: absolute;
-  top: 85%;
-}
-
 .hamburger.is-active {
   -webkit-transform: translateX(-19.75rem);
           transform: translateX(-19.75rem);
 }
 
 .hamburger.is-active span:nth-child(1) {
+  position: absolute;
   top: 60%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   background-color: #FFFFFF;
 }
 
-.hamburger.is-active span:nth-child(2) {
-  top: 51%;
-  opacity: 0;
-}
-
 .hamburger.is-active span:nth-child(3) {
+  position: absolute;
   top: 60%;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -1278,28 +1259,25 @@ select::-ms-expand {
 
 .mv {
   position: relative;
-  height: 100vh;
-  background-image: url(../images/common/mv.png);
-  background-repeat: no-repeat;
-  background-position: 20% center;
-  background-size: cover;
   z-index: 99;
 }
 
-.mv__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.mv__img {
+  margin-top: -1px;
+  margin-top: -0.0625rem;
+  padding-top: 177.8666666667%;
+  background-image: url(../images/common/mv.png);
+  background-repeat: no-repeat;
+  background-position: 22% center;
+  background-size: cover;
 }
-
 .mv__header {
+  padding: 0 16px;
+  padding: 0 1rem;
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 49.5%;
+  -webkit-transform: translateY(-49.5%);
+          transform: translateY(-49.5%);
   color: #3E3E3E;
 }
 @media screen and (min-width: 768px) {
@@ -1328,8 +1306,8 @@ select::-ms-expand {
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.4285714286;
-  margin-top: 32px;
-  margin-top: 2rem;
+  margin-top: 21px;
+  margin-top: 1.3125rem;
 }
 @media screen and (min-width: 768px) {
   .mv__subtitle {
@@ -1341,8 +1319,8 @@ select::-ms-expand {
 }
 
 .mv__btn {
-  margin-top: 30px;
-  margin-top: 1.875rem;
+  margin-top: 25px;
+  margin-top: 1.5625rem;
   text-align: center;
 }
 @media screen and (min-width: 768px) {

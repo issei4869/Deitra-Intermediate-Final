@@ -2,24 +2,35 @@
 
 .mv {
   position: relative;
-  height: 100vh;
-  background-image: url(../images/common/mv.png);
-  background-repeat: no-repeat;
-  background-position: 20% center;
-  background-size: cover;
+  // height: 100vh;
+  //margin-top: rem(68);
   z-index: 99;
+  //top: rem(59);
 }
 
 .mv__inner {
   //padding: 0 rem(30) 0 rem(50);
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
+}
+
+.mv__img {
+  margin-top: rem(-1);
+  padding-top: (667 / 375) * 100%;
+  background-image: url(../images/common/mv.png);
+  background-repeat: no-repeat;
+  background-position: 22% center;
+  background-size: cover;
+  @include mq('md') {
+    
+  }
 }
 
 .mv__header {
+  padding: 0 rem(16);
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 49.5%;
+  transform: translateY(-49.5%);
   //left: rem(16);
   color: $black;
   @include mq('md') {
@@ -44,17 +55,18 @@
   font-size: rem(14);
   font-weight: $bold;
   line-height: calc(20 / 14);
-  margin-top: rem(32);
+  margin-top: rem(21);
   @include mq('md') {
     font-size: rem(18);
     line-height: calc(28 / 18);
     letter-spacing: 0.00045em;
     margin-top: rem(40);
+
   }
 }
 
 .mv__btn {
-  margin-top: rem(30);
+  margin-top: rem(25);
   text-align: center;
   @include mq('md') {
     font-size: rem(40);

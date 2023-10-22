@@ -2,12 +2,16 @@
 
 .hamburger {
   position: fixed;
+  background-image: url(../images/common/hamburger.png);
+  background-repeat: no-repeat;
+  background-position: right right;
+  background-size: contain;
   width: rem(26);
   height: rem(20);
-  top: rem(24);
-  right: rem(16);
+  // top: rem(24);
+  // right: rem(16);
   z-index: 1000;
-  display: block;
+  display: inline-block;
   transition: transform 0.5s ease 0s;
   
   @include mq('md') {
@@ -23,38 +27,40 @@
   transition: transform 0.5s ease 0s;
 }
 
-.hamburger span:nth-child(1) {
-  position: absolute;
-  top: 15%;
-}
+// .hamburger span:nth-child(1) {
+//   position: absolute;
+//   top: 15%;
+// }
 
-.hamburger span:nth-child(2) {
-  position: absolute;
-  top: 51%;
-  opacity: 1;
-}
+// .hamburger span:nth-child(2) {
+//   position: absolute;
+//   top: 51%;
+//   opacity: 1;
+// }
 
-.hamburger span:nth-child(3) {
-  position: absolute;
-  top: 85%;
-}
+// .hamburger span:nth-child(3) {
+//   position: absolute;
+//   top: 85%;
+// }
 
 .hamburger.is-active {
   transform: translateX(rem(-316));
 }
 
 .hamburger.is-active span:nth-child(1) {
+  position: absolute;
   top: 60%;
   transform: rotate(45deg);
   background-color: $white;
 }
 
-.hamburger.is-active span:nth-child(2) {
-  top: 51%;
-  opacity: 0;
-}
+// .hamburger.is-active span:nth-child(2) {
+//   top: 51%;
+//   opacity: 0;
+// }
 
 .hamburger.is-active span:nth-child(3) {
+  position: absolute;
   top: 60%;
   transform: rotate(-45deg);
   background-color: $white;
