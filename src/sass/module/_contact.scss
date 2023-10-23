@@ -23,11 +23,13 @@
 .contact__head{
   margin: 0 auto;
   border-radius: 12px 12px 0 0;
+  padding-top: (343 / 163) * 100%;
   background-image: url(../images/common/contact1.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
-  padding: rem(43) rem(16);
+  //width: 100%;
+  padding: rem(40) rem(16);
   //text-align: center;
   
   
@@ -40,7 +42,7 @@
 }
 
 .contact__section-header {
-
+  line-height: calc(30 / 22.5);
 }
 
 .contact__section-text {

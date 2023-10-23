@@ -6,9 +6,10 @@
   font-weight: $semibold;
   color: $black;
   font-family: $english-family;
-  line-height: 1;
+  line-height: calc(37 / 30);
   @include mq('md') {
     font-size: rem(36);
+    line-height: calc(44 / 36);
   }
 }
 

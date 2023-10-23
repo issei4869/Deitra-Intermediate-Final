@@ -563,18 +563,23 @@ select::-ms-expand {
 .contact__head {
   margin: 0 auto;
   border-radius: 12px 12px 0 0;
+  padding-top: 210.4294478528%;
   background-image: url(../images/common/contact1.png);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
-  padding: 43px 16px;
-  padding: 2.6875rem 1rem;
+  padding: 40px 16px;
+  padding: 2.5rem 1rem;
 }
 @media screen and (min-width: 768px) {
   .contact__head {
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
   }
+}
+
+.contact__section-header {
+  line-height: 1.3333333333;
 }
 
 .contact__section-text {
@@ -1267,8 +1272,6 @@ select::-ms-expand {
 }
 
 .mv__img {
-  margin-top: -1px;
-  margin-top: -0.0625rem;
   padding-top: 177.8666666667%;
   background-image: url(../images/common/mv.png);
   background-repeat: no-repeat;
@@ -1279,11 +1282,11 @@ select::-ms-expand {
   padding: 0 16px;
   padding: 0 1rem;
   position: absolute;
-  top: 49.5%;
+  top: 49.3%;
   left: 0;
   right: 0;
-  -webkit-transform: translateY(-49.5%);
-          transform: translateY(-49.5%);
+  -webkit-transform: translateY(-49.3%);
+          transform: translateY(-49.3%);
   color: #3E3E3E;
 }
 @media screen and (min-width: 768px) {
@@ -1312,8 +1315,8 @@ select::-ms-expand {
   font-size: 0.875rem;
   font-weight: 700;
   line-height: 1.4285714286;
-  margin-top: 21px;
-  margin-top: 1.3125rem;
+  margin-top: 19px;
+  margin-top: 1.1875rem;
 }
 @media screen and (min-width: 768px) {
   .mv__subtitle {
@@ -1325,8 +1328,8 @@ select::-ms-expand {
 }
 
 .mv__btn {
-  margin-top: 25px;
-  margin-top: 1.5625rem;
+  margin-top: 27px;
+  margin-top: 1.6875rem;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -1337,8 +1340,8 @@ select::-ms-expand {
 }
 
 .news-content {
-  padding: 12px 55px 11px 16px;
-  padding: 0.75rem 3.4375rem 0.6875rem 1rem;
+  padding: 14px 55px 11px 16px;
+  padding: 0.875rem 3.4375rem 0.6875rem 1rem;
   position: relative;
 }
 @media screen and (min-width: 768px) {
@@ -1362,8 +1365,10 @@ select::-ms-expand {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 11px;
-  height: 21px;
+  width: 10.75px;
+  width: 0.671875rem;
+  height: 21.5px;
+  height: 1.34375rem;
   background: transparent url(../images/common/news-arrow.png) no-repeat center center/contain;
 }
 
@@ -1389,13 +1394,13 @@ select::-ms-expand {
 .news-content__category {
   color: #3E3E3E;
   display: inline-block;
-  line-height: 1;
 }
 
 .news-content__date {
   font-size: 14px;
   font-size: 0.875rem;
   font-family: "Montserrat", sans-serif;
+  line-height: 1.4285714286;
   letter-spacing: 0.35px;
 }
 @media screen and (min-width: 768px) {
@@ -1410,9 +1415,10 @@ select::-ms-expand {
   font-size: 0.75rem;
   letter-spacing: 0.3px;
   border-radius: 50px;
+  line-height: 1;
   border: 2px solid #3B69FF;
-  padding: 3px 14px;
-  padding: 0.1875rem 0.875rem;
+  padding: 2px 14px;
+  padding: 0.125rem 0.875rem;
   font-weight: 500;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -1433,6 +1439,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .news-content__link {
     margin-top: 0rem;
+    line-height: 1.5555555556;
     max-width: 43.625rem;
     width: 100%;
   }
@@ -1447,7 +1454,6 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .news-content__text {
     font-size: 1.125rem;
-    line-height: 1.5555555556;
     letter-spacing: 0.00045em;
   }
 }
@@ -1465,10 +1471,10 @@ select::-ms-expand {
 
 .news__inner {
   z-index: 100;
-  padding-top: 46px;
-  padding-top: 2.875rem;
-  padding-bottom: 42px;
-  padding-bottom: 2.625rem;
+  padding-top: 40px;
+  padding-top: 2.5rem;
+  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0 5px 12px #3e3e3e;
           box-shadow: 0 5px 12px #3e3e3e;
@@ -1483,8 +1489,8 @@ select::-ms-expand {
 }
 
 .news__items {
-  margin-top: 42px;
-  margin-top: 2.625rem;
+  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 @media screen and (min-width: 768px) {
   .news__items {
@@ -1923,11 +1929,12 @@ select::-ms-expand {
   font-weight: 600;
   color: #3E3E3E;
   font-family: "Montserrat", sans-serif;
-  line-height: 1;
+  line-height: 1.2333333333;
 }
 @media screen and (min-width: 768px) {
   .section-header {
     font-size: 2.25rem;
+    line-height: 1.2222222222;
   }
 }
 

@@ -10,8 +10,8 @@
 .news__inner {
   z-index: 100;
   //margin-top: rem(-60);
-  padding-top: rem(46);
-  padding-bottom: rem(42);
+  padding-top: rem(40);
+  padding-bottom: rem(40);
   background-color: $white;
   box-shadow: 0 5px 12px rgba(#3E3E3E33, 1);
   position: relative;
@@ -30,7 +30,7 @@
 }
 
 .news__items {
-  margin-top: rem(42);
+  margin-top: rem(40);
   @include mq('md') {
     margin-top: rem(60);
   }
