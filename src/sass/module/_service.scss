@@ -1,8 +1,8 @@
 @use 'global' as *;
 
 .service {
-  padding-top: rem(42);
-  padding-bottom: rem(60);
+  padding-top: rem(40);
+  padding-bottom: rem(59);
   background: linear-gradient(
     180deg, //縦に半分こ
     $black 0%,
@@ -32,13 +32,16 @@
 
 .service__items {
   padding-top: rem(40);
-  padding-bottom: rem(37);
-  margin-top: rem(43);
+  padding-bottom: rem(35);
+  margin-top: rem(41);
   //margin-bottom: rem(60);
   background-color: $white;
   box-shadow: 0 5px 12px rgba(#3E3E3E33, 1);
+  display: flex;
+  flex-direction: column;
+  gap: rem(35);
   @include mq('md') {
-    display: flex;
+    flex-direction: row;
     gap: rem(90);
     padding: rem(60) rem(45);
     margin-top: rem(60);
@@ -46,7 +49,8 @@
 }
 
 .service__item {
-  padding: rem(17) rem(16);
+  padding-left: rem(16);
+  padding-right: rem(16);
   @include mq('md') {
     padding: 0;
   }

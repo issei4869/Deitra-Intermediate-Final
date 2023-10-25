@@ -5,7 +5,7 @@
   //padding: 0 rem(16) rem(60) rem(16);
   //background-color: $black;
   //height: rem(425);
-  padding-bottom: rem(58);
+  padding-bottom: rem(60);
   @include mq('md') {
     //height: rem(576);
     padding-bottom: rem(120);
@@ -46,7 +46,7 @@
 }
 
 .comments__content {
-  padding: rem(40) rem(20);
+  padding: rem(37) rem(20) rem(36) rem(20);
   background-color: $white;
   box-shadow: 0 0px 10px rgba(#00000029, 1);
   @include mq('md') {
@@ -55,7 +55,7 @@
 }
 
 .comments__items {
-  margin-top: rem(40);
+  margin-top: rem(37);
   @include mq('md') {
     margin-top: rem(60);
   }

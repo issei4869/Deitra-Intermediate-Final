@@ -18,7 +18,7 @@
 }
 
 .card__body {
-  padding: rem(12);
+  padding: rem(12) rem(12) rem(11) rem(12);
   background-color: $white;
   @include mq('md') {
     padding: rem(16);
@@ -46,10 +46,10 @@
 .card__text {
   font-size: rem(12);
   font-weight: $medium;
-  line-height: calc(16 / 12);
+  line-height: calc(18 / 12);
   letter-spacing: 0.00001em;
   color: $black;
-  margin-top: rem(10);
+  margin-top: rem(7);
   @include mq('md') {
     font-size: rem(16);
     line-height: calc(24 / 16);

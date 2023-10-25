@@ -2,7 +2,7 @@
 
 .price {
   background-color: $gray;
-  padding-top: rem(45);
+  padding-top: rem(40);
   padding-bottom: rem(120);
   position: relative;
   z-index: 99;
@@ -20,7 +20,7 @@
 }
 
 .price__items {
-  margin-top: rem(43);
+  margin-top: rem(40);
   @include mq('md') {
     margin-top: rem(60);
   }
@@ -39,7 +39,7 @@
   font-weight: $medium;
   line-height: 1;
   color: $black;
-  margin-top: rem(8);
+  margin-top: rem(6);
   @include mq('md') {
     margin-top: rem(12);
   }

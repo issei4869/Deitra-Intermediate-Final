@@ -3,10 +3,9 @@
 .price-content {
   display: flex;
   align-items: center;
-  font-family: $english-family;
-  font-weight: $semibold;
-  font-size: rem(20);
-  line-height: 1;
+  
+  
+  
   border: 1px solid #707070;
   width: 100%;
 
@@ -19,8 +18,12 @@
 
 .price-content__title,
 .price-content__yen {
-  padding-top: rem(16);
-  padding-bottom: rem(18);
+  padding-top: rem(15);
+  padding-bottom: rem(16);
+  font-size: rem(20);
+  line-height: calc(24 / 20);
+  font-family: $english-family;
+  font-weight: $semibold;
 }
 
 .price-content__title {
