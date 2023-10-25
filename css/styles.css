@@ -251,10 +251,10 @@ select::-ms-expand {
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.4285714286;
   color: #FFFFFF;
-  margin-top: 40px;
-  margin-top: 2.5rem;
+  margin-top: 39px;
+  margin-top: 2.4375rem;
 }
 @media screen and (min-width: 768px) {
   .access__address {
@@ -266,8 +266,8 @@ select::-ms-expand {
 
 .access__googlemap {
   aspect-ratio: 343/241;
-  margin-top: 21px;
-  margin-top: 1.3125rem;
+  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 @media screen and (min-width: 768px) {
   .access__googlemap {
@@ -1733,8 +1733,8 @@ select::-ms-expand {
 .qa-content {
   background-color: #FFFFFF;
   border-radius: 4px;
-  padding: 16.5px 16px 16px 16px;
-  padding: 1.03125rem 1rem 1rem 1rem;
+  padding: 16px;
+  padding: 1rem;
 }
 
 .qa-content__question {
@@ -1753,7 +1753,8 @@ select::-ms-expand {
 .qa-content__question::after {
   content: "";
   position: absolute;
-  right: 0;
+  right: 1px;
+  right: 0.0625rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1761,7 +1762,7 @@ select::-ms-expand {
   transition: all 0.3s ease 0s;
   width: 15px;
   height: 15px;
-  background: transparent url(../images/common/minus.png) no-repeat center center/contain;
+  background: transparent url(../images/common/plus.png) no-repeat center center/contain;
 }
 
 .qa-content__question.is-open {
@@ -1772,11 +1773,13 @@ select::-ms-expand {
   position: absolute;
   right: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%) rotate(90deg);
-          transform: translateY(-50%) rotate(90deg);
+  -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  background: transparent url(../images/common/plus.png) no-repeat center center/contain;
+  background: transparent url(../images/common/minus.png) no-repeat center center/contain;
+  width: 15px;
+  height: 15px;
 }
 
 .qa-content__icon {
@@ -1860,8 +1863,8 @@ select::-ms-expand {
 }
 
 .qa__items {
-  margin-top: 45px;
-  margin-top: 2.8125rem;
+  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 @media screen and (min-width: 768px) {
   .qa__items {

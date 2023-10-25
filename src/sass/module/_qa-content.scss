@@ -3,7 +3,7 @@
 .qa-content {
   background-color: $white;
   border-radius: 4px;
-  padding: rem(16.5) rem(16) rem(16) rem(16);
+  padding: rem(16);
 }
 
 .qa-content__question {
@@ -16,13 +16,13 @@
 .qa-content__question::after {
   content: "";
   position: absolute;
-  right: 0; 
+  right: rem(1); 
   top: 50%; //上下中央
   transform: translateY(-50%); //上下中央
   transition: all 0.3s ease 0s;
   width: 15px; //アイコンの横幅
   height: 15px; //アイコンの縦幅
-  background: transparent url(../images/common/minus.png) no-repeat center center / contain;
+  background: transparent url(../images/common/plus.png) no-repeat center center / contain;
 }
 
 .qa-content__question.is-open {
@@ -33,9 +33,11 @@
   position: absolute;
   right: 0;  
   top: 50%; //上下中央
-  transform: translateY(-50%) rotate(90deg); //上下中央に、90度回転
+  transform: translateY(-50%) rotate(180deg); //上下中央に、90度回転
   transition: all 0.3s ease 0s;
-  background: transparent url(../images/common/plus.png) no-repeat center center / contain;
+  background: transparent url(../images/common/minus.png) no-repeat center center / contain;
+  width: 15px; //アイコンの横幅
+  height: 15px; //アイコンの縦幅
 }
 
 .qa-content__icon {

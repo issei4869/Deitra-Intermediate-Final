@@ -52,9 +52,9 @@
 .access__address {
   font-size: rem(14);
   font-weight: $medium;
-  line-height: calc(24 / 16);
+  line-height: calc(20 / 14);
   color: $white;
-  margin-top: rem(40);
+  margin-top: rem(39);
   @include mq('md') {
     grid-area: 3 / 2 / 4 / 3;
     font-size: rem(16);
@@ -64,7 +64,7 @@
 
 .access__googlemap {
   aspect-ratio: 343 / 241; // 横 / 高さ
-  margin-top: rem(21);
+  margin-top: rem(20);
   @include mq('md') {
     aspect-ratio: 726 / 520; // 横 / 高さ
     grid-area: 2 / 4 / 8 / 5;
