@@ -29,7 +29,6 @@
 
 .footer__icons {
   display: flex;
-  margin-top: rem(20);
   justify-content: center;
   text-align: center;
   gap: rem(50);
@@ -41,27 +40,25 @@
   }
 }
 
-.footer__icon svg {
-  //font-style: rem(30);
-  width: rem(30);
-  height: rem(30);
-}
-
-.footer__icon svg path {
+.footer__icon span svg  {
+  //font-size: rem(36);
   fill: $gray;
-  opacity: 0.6
+  opacity: 0.6;
 }
 
-.footer__icon img {
+.footer__icon--twiter {
   width: rem(36);
   height: rem(36);
-  color: $gray;
-  opacity: 0.6
+}
+
+.footer__icon--facebook {
+  width: rem(36);
+  height: rem(36);
 }
 
 .footer__items {
   color: $white;
-  margin-top: rem(42);
+  margin-top: rem(44);
   @include mq('md') {
     margin-top: rem(40);
   }
@@ -69,15 +66,20 @@
 
 .footer__item {
   display: block;
+  font-size: rem(14);
+  font-weight: $medium;
+  line-height: 1;
+  letter-spacing: 0.035em;
   @include mq('md') {
     text-align: left;
   }
 }
 
 .footer__item a {
-  font-size: rem(14);
-  font-weight: $medium;
-  letter-spacing: 0.0035em;
+  // font-size: rem(14);
+  // font-weight: $medium;
+  // line-height: 1;
+  // letter-spacing: 0.0035em;
   @include mq('md') {
     font-size: rem(16);
     letter-spacing: 0.0004em;
@@ -93,7 +95,7 @@
 
 .footer__title {
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(44);
   @include mq('md') {
     margin-top: 0;
     text-align: right;
@@ -117,8 +119,8 @@
   opacity: 0.6;
   font-family: $english-family;
   font-weight: $regular;
-  line-height: 1;
-  letter-spacing: 0.003em;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.023em;
 }
 
 .footer__copyright small {

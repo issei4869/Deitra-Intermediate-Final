@@ -32,15 +32,13 @@
   content: "";
   position: absolute;
   left: 0;
-  top: 42%;
-  transform: translateY(-42%);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .form-checkbox__text::before {
-  // width: rem(18);
-  // height: rem(18);
-  width: rem(16);
-  height: rem(16);
+  width: rem(18);
+  height: rem(18);
   border: 1px solid #707070;
   @include mq('md') {
     width: rem(18);
@@ -64,7 +62,7 @@
   top: rem(6);
   left: rem(1.5);
   display: block;
-  width: rem(12);
+  width: rem(15);
   height: rem(7);
   border-left: 2px solid $blue;
   border-bottom: 2px solid $blue;

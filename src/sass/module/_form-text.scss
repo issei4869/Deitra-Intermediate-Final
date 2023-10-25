@@ -3,13 +3,16 @@
 @use 'global' as *;
 
 .form-text {
-  padding-bottom: rem(5);
+  //padding-bottom: rem(5);
   width: 100%;
   font-size: rem(14);
   font-weight: $medium;
   border-bottom: 1px solid $black;
   opacity: 0.5;
+  line-height: 1;
+  max-height: rem(19);
 }
+
 
 .form-text:hover {
   border-bottom: 1px solid #4973FF;

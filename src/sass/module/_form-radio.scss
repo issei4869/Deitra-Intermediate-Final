@@ -3,7 +3,7 @@
 @use 'global' as *;
 
 .form-radio {
-  
+  line-height: 1;
 }
 
 .form-radio__input {
@@ -21,7 +21,6 @@
 .form-radio__text {
   position: relative;
   font-size: rem(16);
-  line-height: 1;
   color: $black;
   font-weight: $medium;
   padding-left: rem(20);

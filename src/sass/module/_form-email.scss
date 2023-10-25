@@ -3,12 +3,16 @@
 @use 'global' as *;
 
 .form-email {
-  padding-bottom: rem(5);
+  //padding-bottom: rem(5);
   width: 100%;
   font-size: rem(14);
   font-weight: $medium;
   border-bottom: 1px solid $black;
+  // text-decoration: underline $black;
+  // text-underline-offset: rem(4);
   opacity: 0.5;
+  line-height: 1;
+  max-height: rem(19);
 }
 
 .form-email:hover {

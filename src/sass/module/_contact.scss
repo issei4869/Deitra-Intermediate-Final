@@ -16,7 +16,7 @@
 }
 
 .contact__box {
-  border-radius: 12px;
+  border-radius: 15px 15px 12px 12px;
   background-color: $white;
 }
 
@@ -24,6 +24,7 @@
   margin: 0 auto;
   border-radius: 12px 12px 0 0;
   padding: rem(40) rem(16);
+  padding-bottom: rem(36);
   background-image: url(../images/common/contact1.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -42,14 +43,14 @@
   }
 }
 
-.contact__section-header {
-  line-height: calc(30 / 22.5);
-}
+// .contact__section-header {
+//   line-height: calc(30 / 22.5);
+// }
 
 .contact__section-text {
   display: flex;
   justify-content: center;
-  margin-top: rem(12);
+  margin-top: rem(8);
   color: $white;
   font-size: rem(14);
   font-weight: $medium;
@@ -76,7 +77,8 @@
 }
 
 .contact__privacy {
-  margin-top: rem(33);
+  margin-top: rem(31);
+  line-height: 1;
 }
 
 .contact__btn {
