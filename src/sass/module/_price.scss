@@ -3,7 +3,7 @@
 .price {
   background-color: $gray;
   padding-top: rem(40);
-  padding-bottom: rem(120);
+  padding-bottom: rem(121);
   position: relative;
   z-index: 99;
   @include mq('md') {
@@ -39,7 +39,7 @@
   font-weight: $medium;
   line-height: 1;
   color: $black;
-  margin-top: rem(6);
+  margin-top: rem(9);
   @include mq('md') {
     margin-top: rem(12);
   }

@@ -49,7 +49,7 @@
   line-height: calc(18 / 12);
   letter-spacing: 0.00001em;
   color: $black;
-  margin-top: rem(7);
+  margin-top: rem(8);
   @include mq('md') {
     font-size: rem(16);
     line-height: calc(24 / 16);

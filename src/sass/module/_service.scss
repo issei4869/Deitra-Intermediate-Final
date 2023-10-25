@@ -39,7 +39,7 @@
   box-shadow: 0 5px 12px rgba(#3E3E3E33, 1);
   display: flex;
   flex-direction: column;
-  gap: rem(35);
+  gap: rem(33);
   @include mq('md') {
     flex-direction: row;
     gap: rem(90);
