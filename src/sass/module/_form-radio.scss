@@ -18,6 +18,12 @@
   opacity: 1;
 }
 
+.form-radio__input:focus + .form-radio__text::before {
+  outline: none;
+  border: 1px solid #3B69FF;
+  box-shadow: 0 5px 4px -4px rgba(#4973FF80, 1);
+}
+
 .form-radio__text {
   position: relative;
   font-size: rem(16);
@@ -47,10 +53,7 @@
   box-shadow: 0 0 6px rgba(#4973FF33, 1);
 }
 
-.form-radio__text:hover::before {
-  border: 1px solid #3B69FF;
-  box-shadow: 0 0 6px rgba(#4973FF33, 1);
-}
+
 
 .form-radio__text::after {
   width: rem(6);

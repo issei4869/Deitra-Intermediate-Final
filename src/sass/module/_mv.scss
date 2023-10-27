@@ -22,7 +22,8 @@
   background-position: 22% center;
   background-size: cover;
   @include mq('md') {
-    
+    padding-top: (648 / 1280) * 100%;
+    background-position: center center;
   }
 }
 

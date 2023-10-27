@@ -46,17 +46,6 @@
   }
 }
 
-.form-checkbox__text::after {
-  // width: rem(15.05);
-  // height: rem(11.31);
-  // width: 17.05px;
-  // height: 13.31px;
-  // left: rem(0.5);
-  // margin-top: rem(1);
-  // background: url(../images/common/checkbox.png) no-repeat center center / contain;
-  // opacity: 0;
-}
-
 .form-checkbox__input:checked + .form-checkbox__text::after {
   //opacity: 1;
   top: rem(6);
@@ -69,3 +58,9 @@
   //border-color: $blue;
   transform: rotate(-45deg);
 }
+
+.form-checkbox__input:focus + .form-checkbox__text::before {
+  outline: none;
+  border: 1px solid #4973FF;
+  box-shadow: 0 0 8px rgba(#4973FF80, 1);
+} 

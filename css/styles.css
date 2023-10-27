@@ -975,6 +975,13 @@ select::-ms-expand {
           transform: rotate(-45deg);
 }
 
+.form-checkbox__input:focus + .form-checkbox__text::before {
+  outline: none;
+  border: 1px solid #4973FF;
+  -webkit-box-shadow: 0 0 8px #4973ff;
+          box-shadow: 0 0 8px #4973ff;
+}
+
 .form-email {
   width: 100%;
   font-size: 14px;
@@ -1016,6 +1023,13 @@ select::-ms-expand {
   opacity: 1;
 }
 
+.form-radio__input:focus + .form-radio__text::before {
+  outline: none;
+  border: 1px solid #3B69FF;
+  -webkit-box-shadow: 0 5px 4px -4px #4973ff;
+          box-shadow: 0 5px 4px -4px #4973ff;
+}
+
 .form-radio__text {
   position: relative;
   font-size: 16px;
@@ -1043,12 +1057,6 @@ select::-ms-expand {
   height: 0.75rem;
   border: 1px solid #707070;
   left: 0;
-}
-
-.form-radio__text:hover::before {
-  border: 1px solid #3B69FF;
-  -webkit-box-shadow: 0 0 6px #4973ff;
-          box-shadow: 0 0 6px #4973ff;
 }
 
 .form-radio__text:hover::before {
@@ -1097,6 +1105,12 @@ select::-ms-expand {
 .form-select:hover {
   -webkit-box-shadow: 0 0 5px #4973ff;
           box-shadow: 0 0 5px #4973ff;
+}
+
+.form-select:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 8px #4973ff;
+          box-shadow: 0 0 8px #4973ff;
 }
 
 .form-text {
@@ -1292,6 +1306,13 @@ select::-ms-expand {
   background-position: 22% center;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .mv__img {
+    padding-top: 50.625%;
+    background-position: center center;
+  }
+}
+
 .mv__header {
   padding: 0 16px;
   padding: 0 1rem;
