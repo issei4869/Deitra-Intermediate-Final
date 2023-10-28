@@ -34,19 +34,28 @@
   left: 0;
   right: 0;
   transform: translateY(-49.3%);
+  text-align: center;
   //left: rem(16);
   color: $black;
   @include mq('md') {
     //width: 100%;
+    top: 60%;
     left: 50%;
-    padding-right: rem(40);
+    transform: translateY(-60%);
+    padding-left: 0;
+    padding-right: 0;
+    
   }
 }
 
 .mv__title {
+  display: inline-block;
+}
+.mv__maintitle {
   font-size: rem(24);
   font-weight: $bold;
   line-height: calc(40 / 24);
+  text-align: left;
   @include mq('md') {
     font-size: rem(32);
     line-height: calc(48 / 32);
@@ -59,12 +68,13 @@
   font-weight: $bold;
   line-height: calc(20 / 14);
   margin-top: rem(19);
+  text-align: left;
   @include mq('md') {
     font-size: rem(18);
     line-height: calc(28 / 18);
-    letter-spacing: 0.00045em;
-    margin-top: rem(40);
-
+    letter-spacing: 0.45px;
+    margin-top: rem(28);
+    padding-right: rem(40);
   }
 }
 
@@ -74,6 +84,7 @@
   @include mq('md') {
     font-size: rem(40);
     text-align: left;
+    margin-top: rem(28);
   }
 }
 

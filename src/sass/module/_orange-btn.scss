@@ -13,7 +13,7 @@
   box-shadow: 0 3px 5px rgba(#3E3E3E33, 1);
   @include mq('md') {
     font-size: rem(18);
-    letter-spacing: 0.00045em;
+    letter-spacing: 0.45px;
     padding-left: rem(50);
     padding-right: rem(50);
   }
@@ -33,5 +33,5 @@
 
 .orange-btn--contact--active {
   background-color: $yellow;
-  pointer-events: all;
+  pointer-events: auto;
 }

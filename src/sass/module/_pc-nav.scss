@@ -6,6 +6,7 @@
 
 .pc-nav__items {
   display: flex;
+  gap: rem(40);
   align-items: center;
   justify-content: center;
   height: inherit;
@@ -17,11 +18,7 @@
 }
 
 .pc-nav__item {
-  margin-left: rem(40);
-}
-
-.pc-nav__item:first-child {
-  margin-left: 0;
+  
 }
 
 .pc-nav__item a {
@@ -33,7 +30,7 @@
   color: $black;
   font-size: rem(16);
   font-family: $english-family;
-  letter-spacing: -0.004em;
+  letter-spacing: -0.025em;
   font-weight: $medium;
   line-height: 1;
   //padding-right: rem(12);

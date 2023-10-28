@@ -16,9 +16,8 @@
 .header__inner {
   height: inherit;
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
   align-items: center;
-  padding: 0 rem(15);
   @include mq('md') {
     justify-content: center;
   }
