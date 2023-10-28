@@ -56,6 +56,11 @@
   }
 }
 
+.contactform-field__item input::placeholder {
+  opacity: 0.5;
+}
+
+
 .contactform-field__item--sp {
   @include mq('md') {
     flex-grow: 0;

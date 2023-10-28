@@ -27,4 +27,11 @@
 .orange-btn--contact {
   letter-spacing: 0.4px;
   padding: rem(16) rem(50);
+  background-color: #B2B2B2;
+  pointer-events: none;
+}
+
+.orange-btn--contact--active {
+  background-color: $yellow;
+  pointer-events: all;
 }

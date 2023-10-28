@@ -1,0 +1,12 @@
+@use 'global' as *;
+
+.contact-message {
+  text-align: center;
+  padding-top: rem(60);
+  padding-bottom: rem(60);
+  display: none;
+}
+
+.contact-message--error {
+  color: $red;
+}

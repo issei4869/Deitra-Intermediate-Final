@@ -510,7 +510,7 @@
           <div class="section-header section-header--white" id="contact-area">Contact Us</div>
           <div class="contact__section-text">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。</div>
         </div>
-        <form class="contact__form">
+        <form id="js-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSen8ffq2aF3ecfx0mc6-6lMZ9SBpA0IZGhdw0AdeuY8GEyV1A/formResponse" class="contact__form">
           <div class="contact__fields">
             <!-- お問い合わせ種別 -->
             <div class="contact__field contactform-field">
@@ -518,12 +518,12 @@
                 <label for="your-age" class="contactform-field__label">お問い合わせ種別</label>
               </div>
               <div class="contactform-field__item contactform-field__item--sp">
-                <select name="" id="your-age" class="form-select">
-                  <option value="">選択してください</option>
-                  <option value="">1</option>
-                  <option value="">2</option>
-                  <option value="">3</option>
-                  <option value="">4</option>
+                <select name="entry.2106684625" id="your-age" class="form-select">
+                  <option value="選択してください">選択してください</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
                 </select>
               </div>
             </div>
@@ -537,7 +537,7 @@
                 <input
                   class="form-text"
                   type="text"
-                  name=""
+                  name="entry.925433175"
                   id="your-name"
                   placeholder="氏名"
                 />
@@ -553,7 +553,7 @@
                 <input 
                   class="form-text"
                   type="text"
-                  name=""
+                  name="entry.1954259315"
                   id="your-furigana"
                   placeholder="フリガナ"
                 />
@@ -568,7 +568,7 @@
                 <input 
                   class="form-email"
                   type="email" 
-                  name="" 
+                  name="emailAddress" 
                   id="your-email" 
                   placeholder="sample@gmail.com"
                 />
@@ -582,11 +582,21 @@
               <div class="contactform-field__item">
                 <div class="contactform-field__radios">
                   <label class="contactform-field__radio form-radio">
-                    <input class="form-radio__input" type="radio" name="your-name" id="">
+                    <input 
+                      class="form-radio__input" type="radio"
+                      name="entry.571473059"
+                      id=""
+                      value="男性"
+                    />
                     <span class="form-radio__text">男性</span>
                   </label>
                   <label class="contactform-field__radio form-radio">
-                    <input class="form-radio__input" type="radio" name="your-name" id="">
+                    <input
+                      class="form-radio__input" type="radio"
+                      name="entry.571473059"
+                      id=""
+                      value="女性"
+                    />
                     <span class="form-radio__text">女性</span>
                   </label>
                 </div>
@@ -599,7 +609,7 @@
               </div>
               <div class="contactform-field__item">
                 <textarea
-                  name=""
+                  name="entry.500571642"
                   id="your-message"
                   class="form-textarea"
                 ></textarea>
@@ -611,18 +621,25 @@
             <label class="form-checkbox">
               <input
                 type="checkbox"
-                name=""
+                name="entry.870998553"
                 id=""
                 class="form-checkbox__input"
+                value="個人情報保護方針に同意する"
               />
               <span class="form-checkbox__text">個人情報保護方針に同意する</span>
             </label>
           </div>
           <div class="contact__btn">
             <!-- オレンジボタン共通パーツ -->
-            <a href="" class="orange-btn orange-btn--contact">送信する</a>
+            <button id="js-submit" class="orange-btn orange-btn--contact" type="submit" disabled>送信する</button>
           </div>
         </form>
+        <div id="js-success" class="contact-message">
+          <p>送信完了しました。ありがとうございました</p>
+        </div>
+        <div id="js-error" class="contact-message contact-message--error">
+          <p>送信に失敗しました。ページを更新して再度送信してください。</p>
+        </div>
       </div>
     </div>
   </section>

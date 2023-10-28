@@ -102,8 +102,54 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-});
+  //Googleフォーム
+  let $form = $( '#js-form' )
+  $form.submit(function(e) { 
+    $.ajax({ 
+     url: $form.attr('action'), 
+     data: $form.serialize(), 
+     type: "POST", 
+     dataType: "xml", 
+     statusCode: { 
+        0: function() { 
+          //送信に成功したときの処理 
+          $form.slideUp()
+          $( '#js-success').slideDown()
+        }, 
+        200: function() { 
+          //送信に失敗したときの処理
+          $form.slideUp()
+          $( '#js-error').slideDown()
+        }
+      } 
+    });
+    return false; 
+  });
 
+  //formの入力確認
+  let $submit = $( '#js-submit' )
+  $( '#js-form select, #js-form input, #js-form textarea' ).on( 'change', function() {
+    if(
+      //名前が入力されていれば
+      $( '#js-form input[name="entry.925433175"]' ).val() !=="" &&
+      //フリガナが入力されていれば
+      $( '#js-form input[name="entry.1954259315"]' ).val() !=="" &&
+      //チェックが入力されていれば
+      $( '#js-form input[name="entry.870998553"]' ).prop( 'checked' )  === true
+    ) {
+      //disabled(選択、クリック、入力など無効な要素)を外す
+      $submit.prop( 'disabled', false )
+      //送信ボタンの色をオレンジに変える
+      $submit.addClass( 'orange-btn--contact--active' )
+    } else {
+      //disabled(選択、クリック、入力など無効な要素)を入れる
+      $submit.prop( 'disabled', true )
+      //送信ボタンの色を元に戻す
+      $submit.removeClass( 'orange-btn--contact--active' )
+    }
+  })
+
+});
 
 
 
