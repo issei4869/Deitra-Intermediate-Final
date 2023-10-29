@@ -5,9 +5,11 @@
   // width: rem(176);
   // height: rem(20);
   text-align: center;
+  left: rem(3);
   @include mq('md') {
-    bottom: rem(-60);
+    bottom: rem(-63);
     text-align: left;
+    left: rem(4);
   }
 }
 

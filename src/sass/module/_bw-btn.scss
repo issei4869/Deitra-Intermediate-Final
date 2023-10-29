@@ -1,7 +1,7 @@
 @use 'global' as *;
 
 .bw-btn {
-  padding: calc(rem(16) - rem(4)) calc(rem(100) - rem(3));
+  padding: calc(rem(16) - rem(1)) calc(rem(100) - rem(2));
   //background-color:  transparent; 
   display: inline-block;
   font-size: rem(18);
@@ -10,24 +10,25 @@
   letter-spacing: 3.6px;
   border: 1px solid $white;
   color: $white;
-  line-height: 1;
+  line-height: calc(22 / 18);
   transition: all 0.3s ease 0s;
   @include mq('md') {
-    padding: rem(20) calc(rem(80) - rem(2));
+    padding: calc(rem(20) - rem(1)) calc(rem(80) - rem(2));
     font-size: rem(20);
-    //line-height: calc(22.5 / 20);
+    line-height: calc(24 / 20);
     letter-spacing: 4px;
   }
 }
 
-.bw-btn--results {
-  padding-top: rem(14);
-  padding-bottom: rem(14);
-  line-height: calc(23 / 18);
-}
+// .bw-btn--results {
+//   padding-top: rem(14);
+//   padding-bottom: rem(14);
+//   line-height: calc(23 / 18);
+// }
 
 .bw-btn--access {
-  letter-spacing: 2px;
+  // letter-spacing: 2px;
+  letter-spacing: 1.8px;
 }
 
 .bw-btn:hover {

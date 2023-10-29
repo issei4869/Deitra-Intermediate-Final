@@ -35,8 +35,12 @@
   right: 0;
   transform: translateY(-49.3%);
   text-align: center;
+  //display: inline-block;
   //left: rem(16);
   color: $black;
+  @include mq('mi') {
+    text-align: left;
+  }
   @include mq('md') {
     //width: 100%;
     top: 60%;

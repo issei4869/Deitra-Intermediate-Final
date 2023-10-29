@@ -308,8 +308,8 @@ select::-ms-expand {
 }
 
 .bw-btn {
-  padding: 12px 97px;
-  padding: 0.75rem 6.0625rem;
+  padding: 15px 98px;
+  padding: 0.9375rem 6.125rem;
   display: inline-block;
   font-size: 18px;
   font-size: 1.125rem;
@@ -318,28 +318,21 @@ select::-ms-expand {
   letter-spacing: 3.6px;
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
-  line-height: 1;
+  line-height: 1.2222222222;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 @media screen and (min-width: 768px) {
   .bw-btn {
-    padding: 1.25rem 4.875rem;
+    padding: 1.1875rem 4.875rem;
     font-size: 1.25rem;
+    line-height: 1.2;
     letter-spacing: 4px;
   }
 }
 
-.bw-btn--results {
-  padding-top: 14px;
-  padding-top: 0.875rem;
-  padding-bottom: 14px;
-  padding-bottom: 0.875rem;
-  line-height: 1.2777777778;
-}
-
 .bw-btn--access {
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
 }
 
 .bw-btn:hover {
@@ -386,7 +379,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .card__body {
-    padding: 1rem;
+    padding: 1rem 1rem 1.25rem 1rem;
   }
 }
 
@@ -401,7 +394,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .card__title {
     font-size: 1.25rem;
-    line-height: 1.2;
+    line-height: 1;
     letter-spacing: 0;
   }
 }
@@ -420,7 +413,8 @@ select::-ms-expand {
   .card__text {
     font-size: 1rem;
     line-height: 1.5;
-    margin-top: 1rem;
+    margin-top: 0.75rem;
+    width: 100%;
   }
 }
 
@@ -1356,6 +1350,11 @@ select::-ms-expand {
   text-align: center;
   color: #3E3E3E;
 }
+@media screen and (max-width: 375px) {
+  .mv__header {
+    text-align: left;
+  }
+}
 @media screen and (min-width: 768px) {
   .mv__header {
     top: 60%;
@@ -2007,6 +2006,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .results__items {
     margin-top: 3.75rem;
+    padding-left: 0;
   }
 }
 
@@ -2096,6 +2096,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .service-content__title {
     line-height: 1.4;
+    margin-top: -0.125rem;
   }
 }
 
@@ -2117,7 +2118,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .service-content__text {
-    margin-top: 0.875rem;
+    margin-top: 0.75rem;
   }
 }
 
@@ -2172,7 +2173,7 @@ select::-ms-expand {
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 5.625rem;
-    padding: 3.75rem 2.8125rem 3.625rem 2.8125rem;
+    padding: 3.75rem 2.8125rem 3.75rem 2.8125rem;
     margin-top: 3.75rem;
   }
 }
@@ -2309,11 +2310,14 @@ select::-ms-expand {
   bottom: -45.5px;
   bottom: -2.84375rem;
   text-align: center;
+  left: 3px;
+  left: 0.1875rem;
 }
 @media screen and (min-width: 768px) {
   .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: -3.75rem;
+    bottom: -3.9375rem;
     text-align: left;
+    left: 0.25rem;
   }
 }
 
