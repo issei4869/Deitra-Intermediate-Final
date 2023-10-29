@@ -7,6 +7,11 @@
   background-size: cover;
   padding-top: rem(41);
   padding-bottom: rem(60);
+  @include mq('md') {
+    background-position: top center;
+    padding-top: rem(60);
+    padding-bottom: rem(120);
+  }
 }
 
 .qa__inner {

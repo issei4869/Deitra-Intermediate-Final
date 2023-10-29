@@ -1940,9 +1940,10 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .qa-content__text {
-    padding: 1rem;
+    padding: 0.75rem 1rem 0.75rem;
     font-size: 1rem;
     line-height: 1.5;
+    margin-top: 1rem;
   }
 }
 
@@ -1955,6 +1956,13 @@ select::-ms-expand {
   padding-top: 2.5625rem;
   padding-bottom: 60px;
   padding-bottom: 3.75rem;
+}
+@media screen and (min-width: 768px) {
+  .qa {
+    background-position: top center;
+    padding-top: 3.75rem;
+    padding-bottom: 7.5rem;
+  }
 }
 
 .qa__items {
