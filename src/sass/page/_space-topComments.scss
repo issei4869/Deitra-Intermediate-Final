@@ -5,7 +5,7 @@
   background-color: $black;
   
   @include mq('md') {
-    margin-top: rem(-135);
+    margin-top: rem(-151);
     background: linear-gradient(
       90deg, //縦に半分こ
       $black 0%,

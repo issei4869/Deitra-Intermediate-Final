@@ -1,10 +1,5 @@
 @use 'global' as *;
 .comments {
-  //z-index: 98;
-  //position: relative;
-  //padding: 0 rem(16) rem(60) rem(16);
-  //background-color: $black;
-  //height: rem(425);
   padding-bottom: rem(60);
   @include mq('md') {
     //height: rem(576);
@@ -50,14 +45,14 @@
   background-color: $white;
   box-shadow: 0 0px 10px rgba(#00000029, 1);
   @include mq('md') {
-    padding: rem(120) rem(60);
+    padding: rem(121) rem(60) rem(118);
   }
 }
 
 .comments__items {
   margin-top: rem(37);
   @include mq('md') {
-    margin-top: rem(60);
+    margin-top: rem(58);
   }
 }
 
@@ -68,7 +63,7 @@
 .comments__item + .comments__item {
   margin-top: rem(34);
   @include mq('md') {
-    margin-top: rem(60);
+    margin-top: rem(58);
   }
 }
 
