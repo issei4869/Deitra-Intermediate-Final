@@ -50,6 +50,9 @@
 
 .mv__title {
   display: inline-block;
+  @include mq('md') {
+    display: block;
+  }
 }
 .mv__maintitle {
   font-size: rem(24);
