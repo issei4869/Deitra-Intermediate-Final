@@ -9,11 +9,15 @@
   font-weight: $medium;
   border-bottom: 1px solid rgba($black, .5);
   background-clip: padding-box;
-  // text-decoration: underline $black;
-  // text-underline-offset: rem(4);
-
   line-height: 1;
   max-height: rem(19);
+  @include mq('md') {
+    font-size: rem(16);
+    padding-left: rem(12);
+    padding-top: rem(3);
+    padding-bottom: rem(3);
+    max-height :initial;
+  }
 }
 
 .form-email:hover {

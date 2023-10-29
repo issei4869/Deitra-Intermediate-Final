@@ -12,6 +12,10 @@
   //margin-top: rem(-60);
   padding-top: rem(40);
   padding-bottom: rem(40);
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+  max-width: rem(1280);
   background-color: $white;
   box-shadow: 0 5px 12px rgba(#3E3E3E33, 1);
   position: relative;
@@ -21,6 +25,15 @@
     padding-top: rem(60);
   }
 }
+
+// .news__inner.inner {
+//   padding-left: 0;
+//   padding-right: 0;
+//   @include mq('md') {
+//     padding-left: rem(40);
+//     padding-right: rem(40);
+//   }
+// }
 
 .news::after {
   // content: "";

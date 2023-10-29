@@ -72,6 +72,8 @@
   letter-spacing: 0.035em;
   @include mq('md') {
     text-align: left;
+    font-size: rem(16);
+    letter-spacing: 0.0004em;
   }
 }
 
@@ -81,8 +83,8 @@
   // line-height: 1;
   // letter-spacing: 0.0035em;
   @include mq('md') {
-    font-size: rem(16);
-    letter-spacing: 0.0004em;
+    // font-size: rem(16);
+    // letter-spacing: 0.0004em;
   }
 }
 
@@ -110,6 +112,7 @@
   line-height: 1;
   @include mq('md') {
     font-size: rem(40);
+    line-height: calc(49 / 40);
   }
 }
 
@@ -121,6 +124,9 @@
   font-weight: $regular;
   line-height: calc(15 / 12);
   letter-spacing: 0.023em;
+  @include mq('md') {
+    margin-top: rem(8);
+  }
 }
 
 .footer__copyright small {

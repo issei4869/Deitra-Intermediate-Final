@@ -20,24 +20,22 @@
 
 .qa__items {
   margin-top: rem(40);
+  display: flex;
+  flex-direction: column;
+  gap: rem(24);
   @include mq('md') {
     margin-top: rem(60);
-    
+    gap: rem(32);
   }
 }
 
 .qa__item {
   @include mq('md') {
-    position: relative;
+    //position: relative;
     max-width: rem(612);
+    width: 100%;
     left: 49%;
-  }
-}
-
-.qa__item:not(:first-child)  {
-  margin-top: rem(24);
-  @include mq('md') {
-    margin-top: rem(32);
+    margin-left: auto;
   }
 }
 

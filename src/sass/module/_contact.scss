@@ -56,13 +56,15 @@
   font-weight: $medium;
   @include mq('md') {
     margin-top: rem(16);
+    font-size: rem(16);
+    line-height: 1;
   }
 }
 
 .contact__form{
   padding: rem(40) rem(12);
   @include mq('md') {
-    padding: rem(60) rem(120);
+    padding: rem(61) rem(120) rem(60);
   }
 }
 
@@ -73,12 +75,15 @@
 }
 
 .contact__field {
-
+  
 }
 
 .contact__privacy {
   margin-top: rem(31);
   line-height: 1;
+  @include mq('md') {
+    margin-top: rem(36);
+  }
 }
 
 .contact__btn {

@@ -618,6 +618,8 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .contact__section-text {
     margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1;
   }
 }
 
@@ -627,7 +629,7 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .contact__form {
-    padding: 3.75rem 7.5rem;
+    padding: 3.8125rem 7.5rem 3.75rem;
   }
 }
 
@@ -647,6 +649,11 @@ select::-ms-expand {
   margin-top: 31px;
   margin-top: 1.9375rem;
   line-height: 1;
+}
+@media screen and (min-width: 768px) {
+  .contact__privacy {
+    margin-top: 2.25rem;
+  }
 }
 
 .contact__btn {
@@ -702,6 +709,7 @@ select::-ms-expand {
     width: 8rem;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    gap: 0.75rem;
   }
 }
 
@@ -879,11 +887,6 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .footer__item {
     text-align: left;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer__item a {
     font-size: 1rem;
     letter-spacing: 0.0004em;
   }
@@ -922,6 +925,7 @@ select::-ms-expand {
 @media screen and (min-width: 768px) {
   .footer__logo {
     font-size: 2.5rem;
+    line-height: 1.225;
   }
 }
 
@@ -934,6 +938,11 @@ select::-ms-expand {
   font-weight: 400;
   line-height: 1.25;
   letter-spacing: 0.023em;
+}
+@media screen and (min-width: 768px) {
+  .footer__copyright {
+    margin-top: 0.5rem;
+  }
 }
 
 .footer__copyright small {
@@ -984,8 +993,8 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .form-checkbox__text::before {
-    width: 1.125rem;
-    height: 1.125rem;
+    width: 1.25rem;
+    height: 1.25rem;
   }
 }
 
@@ -1022,6 +1031,16 @@ select::-ms-expand {
   line-height: 1;
   max-height: 19px;
   max-height: 1.1875rem;
+}
+@media screen and (min-width: 768px) {
+  .form-email {
+    font-size: 1rem;
+    padding-left: 0.75rem;
+    padding-top: 0.1875rem;
+    padding-bottom: 0.1875rem;
+    max-height: none;
+    max-height: initial;
+  }
 }
 
 .form-email:hover {
@@ -1068,6 +1087,11 @@ select::-ms-expand {
   font-weight: 500;
   padding-left: 20px;
   padding-left: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .form-radio__text {
+    line-height: 1;
+  }
 }
 
 .form-radio__text::before,
@@ -1154,6 +1178,16 @@ select::-ms-expand {
   max-height: 19px;
   max-height: 1.1875rem;
 }
+@media screen and (min-width: 768px) {
+  .form-text {
+    font-size: 1rem;
+    padding-left: 0.75rem;
+    padding-top: 0.1875rem;
+    padding-bottom: 0.1875rem;
+    max-height: none;
+    max-height: initial;
+  }
+}
 
 .form-text:hover {
   border-bottom: 1px solid #4973FF;
@@ -1177,6 +1211,11 @@ select::-ms-expand {
   height: 160px;
   height: 10rem;
 }
+@media screen and (min-width: 768px) {
+  .form-textarea {
+    height: 12.5rem;
+  }
+}
 
 .form-textarea:hover {
   border: 1px solid #4973FF;
@@ -1195,8 +1234,8 @@ select::-ms-expand {
   position: fixed;
   background-image: url(../images/common/hamburger.png);
   background-repeat: no-repeat;
-  background-position: center right 31px;
-  background-position: center right 1.9375rem;
+  background-position: center right 35px;
+  background-position: center right 2.1875rem;
   background-size: contain;
   width: 100%;
   height: 20px;
@@ -1560,6 +1599,11 @@ select::-ms-expand {
   padding-top: 2.5rem;
   padding-bottom: 40px;
   padding-bottom: 2.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 auto;
+  max-width: 1280px;
+  max-width: 80rem;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0 5px 12px #3e3e3e;
           box-shadow: 0 5px 12px #3e3e3e;
@@ -1968,28 +2012,29 @@ select::-ms-expand {
 .qa__items {
   margin-top: 40px;
   margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+  gap: 1.5rem;
 }
 @media screen and (min-width: 768px) {
   .qa__items {
     margin-top: 3.75rem;
+    gap: 2rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .qa__item {
-    position: relative;
     max-width: 38.25rem;
+    width: 100%;
     left: 49%;
-  }
-}
-
-.qa__item:not(:first-child) {
-  margin-top: 24px;
-  margin-top: 1.5rem;
-}
-@media screen and (min-width: 768px) {
-  .qa__item:not(:first-child) {
-    margin-top: 2rem;
+    margin-left: auto;
   }
 }
 
@@ -2311,8 +2356,8 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .page-top {
-    right: 2.5rem;
-    bottom: 2.5rem;
+    right: 2.75rem;
+    bottom: 2.375rem;
   }
 }
 

@@ -11,8 +11,8 @@
   visibility: hidden;
   transition: all 0.3s ease 0s;
   @include mq('md') {
-    right: rem(40);
-    bottom: rem(40);
+    right: rem(44);
+    bottom: rem(38);
   }
 }
 

@@ -30,6 +30,9 @@
   color: $black;
   font-weight: $medium;
   padding-left: rem(20);
+  @include mq('md') {
+    line-height: 1;
+  }
 }
 
 .form-radio__text::before,
