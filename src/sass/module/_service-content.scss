@@ -48,4 +48,7 @@
   display: flex;
   text-align: left;
   justify-content: center;
+  @include mq('md') {
+    margin-top: rem(14);
+  }
 }

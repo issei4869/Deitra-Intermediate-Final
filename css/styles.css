@@ -2115,6 +2115,11 @@ select::-ms-expand {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .service-content__text {
+    margin-top: 0.875rem;
+  }
+}
 
 .service {
   padding-top: 40px;
@@ -2167,7 +2172,7 @@ select::-ms-expand {
         -ms-flex-direction: row;
             flex-direction: row;
     gap: 5.625rem;
-    padding: 3.75rem 2.8125rem;
+    padding: 3.75rem 2.8125rem 3.625rem 2.8125rem;
     margin-top: 3.75rem;
   }
 }
