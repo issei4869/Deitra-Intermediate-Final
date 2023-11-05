@@ -47,7 +47,6 @@
   background-color: $white;
   padding-left: rem(19);
   width: calc(100% - 29.154519%);
-  flex-wrap: 1;
   @include mq('md') {
     padding-left: rem(40);
     width: calc(100% - 27.291667%);

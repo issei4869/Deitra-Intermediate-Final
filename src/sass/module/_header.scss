@@ -18,9 +18,15 @@
   display: flex;
   //justify-content: space-between;
   align-items: center;
+  // transform: translateX(0);
+  transition: transform 0.5s ease 0s;
   @include mq('md') {
     justify-content: center;
   }
+}
+
+.header__inner.is-active {
+  transform: translateX(rem(-300));
 }
 
 .header__logo {

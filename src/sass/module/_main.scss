@@ -1,0 +1,10 @@
+@use 'global' as *;
+
+main{
+  //transform: translateX(0);
+  transition: transform 0.5s ease 0s;
+}
+
+main.is-active {
+  transform: translateX(rem(-300));
+}

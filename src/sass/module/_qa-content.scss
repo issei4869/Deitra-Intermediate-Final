@@ -56,6 +56,11 @@
   flex-shrink: 0;
 }
 
+.qa-content__title,
+.qa-content__text {
+  color: $black;
+}
+
 .qa-content__title {
   position: relative;
   margin-left: rem(16);
@@ -81,7 +86,6 @@
   border-radius: 4px;
   font-size: rem(14);
   font-weight: $medium;
-  color: $black;
   line-height: calc(20 / 14);
   margin-top: rem(14);
   @include mq('md') {

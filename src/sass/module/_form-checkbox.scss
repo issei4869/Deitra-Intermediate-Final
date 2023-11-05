@@ -21,6 +21,7 @@
   font-size: rem(16);
   font-weight: $bold;
   line-height: 1;
+  color: $black;
   @include mq('md') {
     font-size: rem(18);
     padding-left: rem(40);

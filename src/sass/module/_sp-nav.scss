@@ -14,7 +14,7 @@
 }
 
 .sp-nav.is-active{
-  transform: translateX(0);
+  transform: translateX(rem(300));
 }
 
 .sp-nav__items {

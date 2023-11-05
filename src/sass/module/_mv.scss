@@ -16,13 +16,13 @@
 
 .mv__img {
   //margin-top: rem(-1);
-  padding-top: (667 / 375) * 100%;
+  padding-top: calc((667 / 375) * 100%);
   background-image: url(../images/common/mv.png);
   background-repeat: no-repeat;
   background-position: 22% center;
   background-size: cover;
   @include mq('md') {
-    padding-top: (648 / 1280) * 100%;
+    padding-top: calc((648 / 1280) * 100%);
     background-position: center center;
   }
 }

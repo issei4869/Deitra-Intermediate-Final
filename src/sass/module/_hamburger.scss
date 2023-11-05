@@ -57,7 +57,7 @@
 .cross.is-active {
   position: fixed;
   position: absolute;
-  background-image: url(../../images/common/batsu.png);
+  background-image: url(../images/common/batsu.png);
   background-repeat: no-repeat;
   //background-position: top rem(24) right rem(16);
   background-position: center right rem(31);
@@ -70,7 +70,7 @@
 }
 
 .cross.is-active {
-  transform: translateX(rem(-316));
+  transform: translateX(rem(-1));
 }
 
 // .cross.is-active span:nth-child(1) {

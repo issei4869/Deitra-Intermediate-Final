@@ -25,12 +25,16 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $('.js-background').removeClass("is-active");
       //$("html").toggleClass("is-fixed");
       $(".js-sp-nav").removeClass("is-active");
+      $(".header__inner").removeClass("is-active");
+      $('main').removeClass('is-active');
     //is-activeクラスがない場合
     } else {
       ////is-activeクラスを追加する
       $('.js-hamburger').addClass("is-active");
       $('.js-background').addClass("is-active");
       $(".js-sp-nav").addClass("is-active");
+      $(".header__inner").addClass("is-active");
+      $('main').addClass('is-active');
     }
   });
 
